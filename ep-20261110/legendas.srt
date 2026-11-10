@@ -1,0 +1,139 @@
+1
+00:00:00,000 --> 00:00:06,767
+Em 1978, um arranha-céu novinho de 59 andares, em Nova York, tinha um segredo perigoso.
+
+2
+00:00:06,867 --> 00:00:10,500
+Um vento forte, vindo do ângulo errado, podia derrubá-lo.
+
+3
+00:00:10,600 --> 00:00:14,000
+Peraí. Um prédio novo, recém-inaugurado, podia cair?
+
+4
+00:00:14,100 --> 00:00:17,300
+Podia. E quase ninguém ficou sabendo na época.
+
+5
+00:00:17,400 --> 00:00:22,700
+O prédio era o Citicorp Center, inaugurado em 1977, no meio de Manhattan.
+
+6
+00:00:22,800 --> 00:00:27,033
+Ele tinha um desenho ousado. Ficava apoiado em quatro pilares gigantes.
+
+7
+00:00:27,133 --> 00:00:31,500
+Só que os pilares não ficavam nos cantos. Ficavam no meio de cada lado.
+
+8
+00:00:31,600 --> 00:00:33,800
+Então os cantos ficavam soltos no ar?
+
+9
+00:00:33,900 --> 00:00:39,967
+Isso. Por isso a estrutura tinha diagonais enormes de aço, que levavam a força do vento até os pilares.
+
+10
+00:00:40,067 --> 00:00:44,267
+E lá em cima, um contrapeso gigante ajudava a diminuir o balanço do prédio.
+
+11
+00:00:44,367 --> 00:00:49,900
+Guarde esse detalhe. Esse contrapeso precisava de energia elétrica pra funcionar.
+
+12
+00:00:50,000 --> 00:00:56,933
+Em 1978, uma estudante de engenharia de Princeton escolheu o prédio como tema do seu trabalho de conclusão.
+
+13
+00:00:57,033 --> 00:01:03,533
+Nas contas dela, o vento batendo na diagonal, pelos cantos, deixava a estrutura mais carregada do que se esperava.
+
+14
+00:01:03,633 --> 00:01:06,733
+Uma estudante achou um problema que os especialistas não viram?
+
+15
+00:01:06,833 --> 00:01:12,400
+A pergunta dela fez o engenheiro responsável voltar às contas. E aí veio a segunda surpresa.
+
+16
+00:01:12,500 --> 00:01:16,633
+No projeto, as ligações das diagonais de aço deveriam ser soldadas.
+
+17
+00:01:16,733 --> 00:01:22,567
+Mas, durante a obra, elas foram trocadas por ligações parafusadas, mais baratas e rápidas.
+
+18
+00:01:22,667 --> 00:01:27,267
+Com vento na diagonal, a carga em parte da estrutura subia uns quarenta por cento.
+
+19
+00:01:27,367 --> 00:01:31,100
+E nas ligações parafusadas, subia cento e sessenta por cento.
+
+20
+00:01:31,200 --> 00:01:33,633
+E que vento seria preciso pra derrubar o prédio?
+
+21
+00:01:33,733 --> 00:01:38,267
+As estimativas falavam em rajadas de cerca de cento e dez quilômetros por hora.
+
+22
+00:01:38,367 --> 00:01:45,500
+Sem energia pro contrapeso, uma tempestade dessas acontecia, em média, uma vez a cada dezesseis anos.
+
+23
+00:01:45,600 --> 00:01:51,900
+A solução foi simples de explicar e difícil de fazer: soldar chapas grossas de aço sobre as ligações parafusadas.
+
+24
+00:01:52,000 --> 00:01:57,533
+A gente trabalhava de madrugada. De dia, os escritórios funcionavam normalmente.
+
+25
+00:01:57,633 --> 00:02:02,900
+Instalaram geradores de reserva pro contrapeso, e sensores nas vigas mais importantes.
+
+26
+00:02:03,000 --> 00:02:07,867
+Em segredo, as autoridades prepararam até um plano para evacuar os quarteirões em volta.
+
+27
+00:02:07,967 --> 00:02:13,333
+Então, no meio da obra, chegou a notícia: o furacão Ella vinha em direção a Nova York.
+
+28
+00:02:13,433 --> 00:02:15,567
+Com o prédio ainda pela metade do conserto?
+
+29
+00:02:15,667 --> 00:02:18,933
+Pois é. Mas o furacão mudou de rumo e foi para o mar.
+
+30
+00:02:19,033 --> 00:02:24,300
+Em poucos meses, os reparos terminaram, e o prédio ficou entre os mais seguros da cidade.
+
+31
+00:02:24,400 --> 00:02:26,367
+E por que eu nunca ouvi falar disso?
+
+32
+00:02:26,467 --> 00:02:29,433
+Porque a história ficou guardada por quase vinte anos.
+
+33
+00:02:29,533 --> 00:02:35,133
+Ela só veio a público em 1995, numa reportagem da revista The New Yorker.
+
+34
+00:02:35,233 --> 00:02:38,567
+A lição é que nenhum cálculo está acima de uma boa pergunta.
+
+35
+00:02:38,667 --> 00:02:46,367
+Uma troca de solda por parafuso quase derrubou um gigante. E a peça que faltava foi a pergunta de uma estudante.
