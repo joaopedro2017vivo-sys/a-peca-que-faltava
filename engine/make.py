@@ -39,6 +39,39 @@ def speech_text(t, extra):
     return t.strip()
 
 
+NARR_CHAIN = ('aresample=48000,highpass=f=80,afftdn=nf=-30:tn=1,agate=threshold=0.015:ratio=2:attack=5:release=180,'
+              'deesser=i=0.35,equalizer=f=180:t=q:w=1:g=2,equalizer=f=3200:t=q:w=1.2:g=2.5,equalizer=f=7000:t=q:w=1.5:g=-1.5,'
+              'acompressor=threshold=-20dB:ratio=3:attack=5:release=100:makeup=3')
+
+
+def split_recording(path, n, workdir):
+    """Trata a gravação do dono e corta em n falas pelas pausas. Devolve lista de arrays ou None."""
+    clean = os.path.join(workdir, 'narracao_tratada.wav')
+    run(['ffmpeg', '-y', '-loglevel', 'error', '-i', path, '-af', NARR_CHAIN, '-ac', '1', '-ar', '48000', clean])
+    sr, x = wavfile.read(clean); x = x.astype(np.float32) / 32768
+    for d in (1.0, 0.8, 1.3, 0.65, 1.6):
+        for nz in (-38, -34, -42):
+            r = run(['ffmpeg', '-hide_banner', '-i', clean, '-af', f'silencedetect=noise={nz}dB:d={d}', '-f', 'null', '-'])
+            txt = r.stderr.decode(errors='ignore')
+            st = [float(v) for v in re.findall(r'silence_start: ([\d.]+)', txt)]
+            en = [float(v) for v in re.findall(r'silence_end: ([\d.]+)', txt)]
+            cuts = [0.0]
+            for a, b in zip(st, en + [len(x) / sr] * (len(st) - len(en))):
+                cuts += [a, b]
+            cuts.append(len(x) / sr)
+            segs = [(cuts[k], cuts[k + 1]) for k in range(0, len(cuts) - 1, 2) if cuts[k + 1] - cuts[k] > 0.45]
+            if len(segs) == n:
+                out = []
+                for a, b in segs:
+                    seg = x[max(0, int((a - 0.06) * sr)):int((b + 0.12) * sr)].copy()
+                    act = seg[np.abs(seg) > 0.02]
+                    seg *= 0.16 / (np.sqrt(np.mean(act ** 2)) if len(act) else 0.1)
+                    pk = np.max(np.abs(seg)); seg *= min(1.0, 0.95 / pk) if pk else 1
+                    out.append(seg)
+                return out
+    return None
+
+
 def make_voices(story_path, out):
     d = json.load(open(story_path))
     vdir = os.path.join(out, 'voice'); os.makedirs(vdir, exist_ok=True)
@@ -46,6 +79,18 @@ def make_voices(story_path, out):
     import bgs
     durs = {}; i = 0
     env = dict(os.environ, LD_LIBRARY_PATH=os.path.dirname(PIPER))
+    # narração gravada pelo dono (opcional)
+    own = None
+    na = d.get('narrator_audio')
+    if na:
+        na = na if os.path.isabs(na) else os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(story_path))), na)
+        n_narr = sum(1 for sc in d['scenes'] for L in sc['lines'] if L['spk'] == 'N')
+        if os.path.exists(na):
+            own = split_recording(na, n_narr, vdir)
+            log('narração gravada:', 'usada' if own else f'não deu para cortar em {n_narr} falas, usando voz gerada')
+        else:
+            log('narração gravada não encontrada:', na)
+    own_i = 0
     for sc in d['scenes']:
         amb = bgs.INFO[sc['bg']][2]
         for L in sc['lines']:
@@ -54,6 +99,13 @@ def make_voices(story_path, out):
             if spk != 'N': v.update({k: d['cast'][spk][k] for k in ('voice', 'speed', 'pitch') if k in d['cast'][spk]})
             model = os.path.join(VOICES, f"vits-piper-pt_BR-{v['voice']}", f"pt_BR-{v['voice']}.onnx")
             raw = os.path.join(vdir, f'raw_{i:03d}.wav'); fin = os.path.join(vdir, f'line_{i:03d}.wav')
+            if spk == 'N' and own:
+                x = own[own_i]; own_i += 1
+                wavfile.write(fin, 48000, (x * 32767).astype(np.int16))
+                hop = 48000 // FPS
+                durs[i] = {'dur': len(x) / 48000, 'env': [float(np.sqrt(np.mean(x[j:j + hop] ** 2))) for j in range(0, len(x), hop)], 'own': True}
+                i += 1
+                continue
             run([PIPER, '--model', model, '--config', model + '.json', '--output_file', raw, '--length_scale', str(v['speed']),
                  '--noise_scale', '0.55', '--noise_w', '0.6', '--sentence_silence', '0.12'], speech_text(L['text'], extra).encode(), env)
             chain = ['aresample=48000:resampler=soxr', 'afftdn=nf=-32:tn=1', 'agate=threshold=0.012:ratio=3:attack=3:release=120']
