@@ -1,4 +1,4 @@
-# Rotina diária do canal "A Peça que Faltava"
+# Rotina do canal (terças e quintas) do canal "A Peça que Faltava"
 
 Canal de histórias reais animadas (ciência, engenharia, história, invenções, desastres que ensinaram algo,
 "o detalhe que mudou tudo"). Bonecos 2D com volume, câmera de cinema, vozes geradas, legendas.
@@ -29,14 +29,23 @@ Canal de histórias reais animadas (ciência, engenharia, história, invenções
 6. **Gerar**: `python3 engine/make.py stories/ARQUIVO.json out/ARQUIVO` (≈30–40 min).
    Se o QA falhar, corrigir e rodar de novo (no máximo 2 tentativas).
 7. **Olhar o resultado**: abrir `folha_16x9.jpg`, `folha_9x16.jpg` e `thumb.jpg` e conferir se nada está cortado, sobreposto ou vazio.
-8. **Publicar os arquivos**: `gh release create ep-AAAAMMDD out/.../video_16x9.mp4 out/.../short_9x16.mp4 out/.../thumb.jpg out/.../legendas.srt --title "TÍTULO" --notes "fontes..."`
-   Link público: `https://github.com/joaopedro2017vivo-sys/a-peca-que-faltava/releases/download/ep-AAAAMMDD/video_16x9.mp4`
+8. **Publicar os arquivos** (branch `videos`, sobrescrita a cada episódio para o repositório não crescer):
+   ```
+   D=$(mktemp -d); cd $D; git init -q; git checkout -q -b videos; mkdir ep-AAAAMMDD
+   cp OUT/video_16x9.mp4 OUT/short_9x16.mp4 OUT/thumb.jpg OUT/legendas.srt ep-AAAAMMDD/
+   git add -A; git -c user.name=Claude -c user.email=noreply@anthropic.com commit -qm "episódio AAAA-MM-DD"
+   git remote add origin https://github.com/joaopedro2017vivo-sys/a-peca-que-faltava; git push -f origin videos
+   ```
+   Link público: `https://raw.githubusercontent.com/joaopedro2017vivo-sys/a-peca-que-faltava/videos/ep-AAAAMMDD/video_16x9.mp4`
+   (o sandbox não consegue abrir esse link; quem baixa é o Metricool. Criar Releases não é permitido nesta sessão.)
 9. **Agendar no Metricool** (blogId 7995588):
    - YouTube vídeo: hoje às 20:00 (America/Sao_Paulo), `type: video`, público, categoria EDUCATION, madeForKids false,
      isAiGeneratedContent true, título/descrição/tags do JSON.
    - YouTube Short: amanhã às 12:00, `type: short`.
    - Instagram Reel com o short (se o Instagram estiver conectado na brand): amanhã às 12:30, `isAiGenerated: true`.
    - Se o horário de hoje já passou, usar o próximo horário livre (+15 min).
+   - **Conferir**: na resposta do Metricool o campo `media` deve virar `https://static.metricool.com/...`
+     (sinal de que ele baixou o vídeo). Se não virar, o link falhou: avisar o dono.
 10. **Registrar**: adicionar o tema em `historico.json`, resumo em `DIARIO.md`, commit e push.
 11. **Avisar o dono** (João Pedro) com uma mensagem curta: tema, horário, link do planner. Se algo falhou, dizer o que e o que foi feito.
 
