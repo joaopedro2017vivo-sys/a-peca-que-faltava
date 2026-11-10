@@ -3,22 +3,10 @@
 Canal de histórias reais animadas (ciência, engenharia, história, invenções, desastres que ensinaram algo,
 "o detalhe que mudou tudo"). Bonecos 2D com volume, câmera de cinema, vozes geradas, legendas.
 
-## Narração com a voz do dono (João Pedro)
+## Narração
 
-O narrador do canal é o João Pedro. Fluxo de terça e quinta:
-
-- **Manhã (tarefa "roteiro")**: passos 1–5 abaixo. O roteiro vai para `stories/AAAA-MM-DD-slug.json` com
-  `"narrator_audio": "narracao/AAAA-MM-DD.m4a"` e é enviado ao dono como lista numerada SÓ com as falas do narrador (`spk: "N"`),
-  pedindo: gravar no celular num lugar silencioso, ler cada fala na ordem, **pausa de 2 segundos entre as falas**, e responder
-  na mesma conversa anexando o áudio até as 16h.
-- **Quando o dono responde com o áudio** (na conversa da manhã): salvar em `narracao/AAAA-MM-DD.<extensão>` (ajustar
-  `narrator_audio` se a extensão for outra), commit e push, e já rodar os passos 6–11.
-  O `make.py` corta a gravação pelas pausas; se o número de trechos não bater com o número de falas do narrador, ele usa a voz
-  gerada e registra no log — nesse caso avisar o dono e pedir para gravar de novo com pausas mais longas (se ainda der tempo).
-- **Tarde (tarefa "produção", 16h43)**: se o episódio de hoje já estiver agendado no Metricool, não fazer nada.
-  Se o roteiro de hoje existir, produzir com ele (com a gravação, se ela estiver em `narracao/`; senão com a voz gerada).
-  Se não existir roteiro, fazer tudo do zero (passos 1–11) com a voz gerada.
-- Não reescrever as falas do narrador depois de enviá-las ao dono (a gravação precisa bater com o texto).
+O dono decidiu NÃO gravar a narração: usar sempre a voz gerada (narrador `cadu-medium`).
+O motor ainda aceita `"narrator_audio"` caso ele mande uma gravação algum dia (pausa de 2 s entre as falas).
 
 ## Passo a passo de cada execução
 
