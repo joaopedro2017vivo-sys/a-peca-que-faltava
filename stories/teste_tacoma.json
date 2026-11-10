@@ -1,0 +1,28 @@
+{
+ "slug": "teste-tacoma",
+ "title": "A ponte que dançou",
+ "thumb_text": "A ponte que dançou com o vento",
+ "channel": "A Peça que Faltava",
+ "cast": {
+  "E": {"name": "Engenheira", "kind": "person", "outfit": "worker", "hat": "hardhat", "color": [230, 120, 40], "skin": [236, 192, 160], "hair": [90, 50, 30], "hairstyle": "long", "lashes": true, "shirt": [70, 120, 200], "voice": "dii-high", "speed": 0.92, "pitch": 0},
+  "R": {"name": "Repórter", "kind": "person", "outfit": "suit", "color": [50, 56, 80], "skin": [180, 128, 92], "hair": [30, 24, 20], "voice": "faber-medium", "speed": 0.92, "pitch": -1}
+ },
+ "scenes": [
+  {"bg": "countryside", "mood": "tense", "lines": [
+   {"spk": "N", "text": "Em 1940, uma ponte nos Estados Unidos começou a balançar como uma bandeira ao vento.", "show": {"year": "1940"}},
+   {"spk": "N", "text": "Quatro meses depois de inaugurada, ela caiu.", "show": {"icon": "bridge"}, "sfx": "boom", "sfx_at": 1.6}
+  ]},
+  {"bg": "construction", "cast": ["R", "E"], "mood": "calm", "expr": "neutral", "lines": [
+   {"spk": "R", "text": "Mas uma ponte não deveria aguentar o vento?", "e": "surprised"},
+   {"spk": "E", "text": "Aguentar o peso, sim. O problema foi o jeito que ela se movia.", "g": "talk", "e": "determined"},
+   {"spk": "N", "text": "O tabuleiro era fino e flexível demais.", "show": {"compare": ["fino", "rígido"]}},
+   {"spk": "E", "text": "O vento fazia a pista torcer, e cada torção alimentava a próxima.", "g": "open", "e": "worried", "acts": {"R": ["idle", "worried"]}},
+   {"spk": "R", "text": "E alguém se machucou?", "e": "worried"},
+   {"spk": "E", "text": "Nenhuma pessoa. A única vítima foi um cachorro, o Tubby.", "e": "worried"}
+  ]},
+  {"bg": "studio", "mood": "hope", "lines": [
+   {"spk": "N", "text": "A queda mudou a engenharia de pontes para sempre.", "show": {"icon": "check"}, "sfx": "chime"},
+   {"spk": "N", "text": "Desde então, toda ponte grande é testada contra o vento antes de ser construída.", "show": {"list": ["túnel de vento", "estrutura rígida", "aberturas no tabuleiro"]}}
+  ]}
+ ]
+}
