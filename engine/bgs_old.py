@@ -160,7 +160,7 @@ def BG(name):
         c.line(pts[136:] + pts[:46], fill=(60, 220, 120, 255), w=4)
         c.ell(630, 250, 34, 34, fill=(40, 110, 210, 255), w=3)
         c.ell(1290, 250, 22, 22, fill=(200, 200, 206, 255), w=3)
-        c.text(960, 92, 'CONTROLE DA MISSÃO · HOUSTON', 20, fill=(90, 230, 140, 255), path=FB)
+        c.text(960, 92, 'CONTROLE DA MISSÃO', 20, fill=(90, 230, 140, 255), path=FB)
         for (x0, x1) in ((80, 440), (1480, 1840)):
             c.rr(x0, 100, x1, 340, 10, fill=(10, 20, 18, 255), ol=(70, 76, 88, 255), w=10)
         rnd = random.Random(2)
