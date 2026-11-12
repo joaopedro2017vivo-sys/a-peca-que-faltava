@@ -1,0 +1,155 @@
+1
+00:00:00,000 --> 00:00:04,667
+Em 12 de novembro de 2014, um pequeno robô tocou o chão de um cometa.
+
+2
+00:00:04,767 --> 00:00:09,800
+Os arpões que deveriam prendê-lo não dispararam. E ele saiu quicando pelo espaço.
+
+3
+00:00:09,900 --> 00:00:12,933
+Peraí. Um robô quicando num cometa? Como assim?
+
+4
+00:00:13,033 --> 00:00:17,500
+É verdade. E essa é uma das histórias mais tensas da exploração espacial.
+
+5
+00:00:17,600 --> 00:00:23,767
+O robô se chamava Philae. Ele viajava preso à sonda Rosetta, da Agência Espacial Europeia.
+
+6
+00:00:23,867 --> 00:00:30,067
+A Rosetta foi lançada em março de 2004. A viagem até o cometa durou dez anos.
+
+7
+00:00:30,167 --> 00:00:32,233
+Dez anos de viagem só pra chegar?
+
+8
+00:00:32,333 --> 00:00:38,567
+Sim. Ela chegou ao cometa em agosto de 2014. E começou a procurar um lugar pra pousar.
+
+9
+00:00:38,667 --> 00:00:41,467
+O problema é que um cometa quase não tem gravidade.
+
+10
+00:00:41,567 --> 00:00:46,033
+Se o robô batesse e não se segurasse, podia simplesmente voltar pro espaço.
+
+11
+00:00:46,133 --> 00:00:49,067
+Por isso o Philae tinha três jeitos de se prender ao chão.
+
+12
+00:00:49,167 --> 00:00:53,967
+Os arpões, um propulsor que o empurraria pra baixo, e parafusos nos pés.
+
+13
+00:00:54,067 --> 00:00:59,400
+Só que, horas antes da separação, veio a primeira notícia ruim: o propulsor não ia funcionar.
+
+14
+00:00:59,500 --> 00:01:02,633
+Sem o propulsor, a gente vai depender só dos arpões.
+
+15
+00:01:02,733 --> 00:01:06,000
+Então vamos. Não dá pra esperar outro cometa.
+
+16
+00:01:06,100 --> 00:01:09,633
+O Philae se soltou da Rosetta e desceu por cerca de sete horas.
+
+17
+00:01:09,733 --> 00:01:13,033
+Sinal de toque no solo! Ele pousou!
+
+18
+00:01:13,133 --> 00:01:16,733
+Era a primeira vez que um objeto feito por humanos pousava num cometa.
+
+19
+00:01:16,833 --> 00:01:19,767
+Esperem. Os dados estão estranhos.
+
+20
+00:01:19,867 --> 00:01:21,267
+Os arpões dispararam?
+
+21
+00:01:21,367 --> 00:01:24,433
+Não. Nenhum dos dois.
+
+22
+00:01:24,533 --> 00:01:28,267
+Sem nada para segurá-lo, o Philae bateu no chão e subiu de novo.
+
+23
+00:01:28,367 --> 00:01:34,400
+Pelas estimativas da equipe, ele subiu cerca de um quilômetro. E ficou quase duas horas no ar.
+
+24
+00:01:34,500 --> 00:01:38,067
+Duas horas flutuando sobre um cometa. Sem controle nenhum.
+
+25
+00:01:38,167 --> 00:01:42,867
+Ele tocou o chão de novo, deu um segundo salto, menor, e finalmente parou.
+
+26
+00:01:42,967 --> 00:01:46,800
+Mas parou no pior lugar possível: tombado, à sombra de um penhasco.
+
+27
+00:01:46,900 --> 00:01:52,000
+O Philae dependia de luz do sol pra recarregar a bateria. E ali quase não batia sol.
+
+28
+00:01:52,100 --> 00:01:56,167
+A bateria principal dava para cerca de sessenta e quatro horas de trabalho.
+
+29
+00:01:56,267 --> 00:02:00,633
+Então a gente faz tudo o que der, agora. Experimento por experimento.
+
+30
+00:02:00,733 --> 00:02:05,867
+Medindo a temperatura, a dureza do chão, os gases. Enviando tudo.
+
+31
+00:02:05,967 --> 00:02:11,233
+E deu certo: o Philae completou a maior parte das medições planejadas antes de a bateria acabar.
+
+32
+00:02:11,333 --> 00:02:17,600
+Ele encontrou moléculas orgânicas e descobriu que, por baixo de uma camada fofa, o chão do cometa era duro.
+
+33
+00:02:17,700 --> 00:02:19,500
+E depois disso? Ele morreu?
+
+34
+00:02:19,600 --> 00:02:24,733
+Ele entrou em hibernação. E, em junho de 2015, mandou sinal de novo!
+
+35
+00:02:24,833 --> 00:02:30,567
+Os contatos duraram só até julho. Depois, o Philae ficou em silêncio para sempre.
+
+36
+00:02:30,667 --> 00:02:34,267
+Por quase dois anos, ninguém sabia exatamente onde ele estava.
+
+37
+00:02:34,367 --> 00:02:40,467
+Até que, em setembro de 2016, a Rosetta finalmente o fotografou, preso numa fresta escura.
+
+38
+00:02:40,567 --> 00:02:44,900
+Um robô que quicou, caiu no lugar errado, e mesmo assim cumpriu a missão.
+
+39
+00:02:45,000 --> 00:02:50,333
+Às vezes, a peça que faltava é a coragem de trabalhar rápido com o que sobrou.
