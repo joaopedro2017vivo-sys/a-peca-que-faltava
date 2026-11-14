@@ -31,6 +31,7 @@ O motor ainda aceita `"narrator_audio"` caso ele mande uma gravação algum dia 
    - Personagens falam como gente (frases curtas). Falas inventadas são ilustrativas: nunca colocar frase inventada na boca
      de uma pessoa real com nome; usar personagens genéricos (engenheira, repórter, operário, cientista) ou citar o fato pelo narrador.
    - Narrador: frases de até ~25 palavras.
+   - **Jeito humano de contar (obrigatório, ver seção "Humanizado" abaixo).**
 6. **Gerar**: `python3 engine/make.py stories/ARQUIVO.json out/ARQUIVO` (≈30–40 min).
    Se o QA falhar, corrigir e rodar de novo (no máximo 2 tentativas).
 7. **Olhar o resultado**: abrir `folha_16x9.jpg`, `folha_9x16.jpg` e `thumb.jpg` e conferir se nada está cortado, sobreposto ou vazio.
@@ -100,3 +101,37 @@ O motor ainda aceita `"narrator_audio"` caso ele mande uma gravação algum dia 
 - **radio: true** numa fala = voz com efeito de rádio. **hold: 1.0** = segura a cena 1 s a mais.
 - **short**: índices das falas (contando todas, na ordem) para o vertical; ~60–90 s. Sem isso, usa o começo + o fim.
 - Números e siglas: escrever como se fala quando houver risco ("cê ó dois" já é automático para CO₂); usar `pronounce` para nomes estrangeiros.
+
+## Humanizado (a partir de 14/11/2026)
+
+O dono pediu o canal com menos "cara de IA". Valem para todo episódio novo:
+
+### Roteiro e narrador
+- O narrador conversa com quem assiste, como um amigo contando um causo: "Imagina…", "Olha só", "Repara nisso", "E aí vem o pior".
+- Linguagem falada do Brasil: "pra", "tá", "a gente", "né", "uns mil metros". Nada de texto de enciclopédia.
+- Misturar frases curtíssimas ("Num cometa.") com frases médias. Nunca três frases seguidas do mesmo tamanho.
+- Personagens reagem como gente: "Peraí, peraí.", "Opa.", "Ué?", "Calma.". Um interrompe ou completa o outro de vez em quando.
+- Pelo menos um momento de humor leve ou de opinião do narrador ("e, sinceramente, isso é genial").
+- Proibido (soa robô): "Prepare-se", "Mas o que ninguém esperava", "fascinante", "incrível jornada", "uma verdadeira",
+  "neste vídeo vamos", "você não vai acreditar", "mergulhe", "desvende".
+- Os fatos continuam com a mesma checagem; humanizar é no jeito de falar, nunca inventar detalhe.
+- Ritmo: use `…` (ou `...`) para uma pausa dramática no meio da fala; `"pause": 0.6` numa fala segura o silêncio depois dela.
+  Perguntas e reticências já ganham uma pausa maior sozinhas; réplica entre personagens sai mais rápida.
+- Use `e` (expressão) em toda fala de personagem: ela também muda o tom da voz (preocupado fala mais rápido e agudo,
+  surpreso mais agudo, determinado mais firme e lento). Cenas `tense` deixam as falas um pouco mais rápidas.
+
+### Motor (já automático)
+- Voz: cada frase sai num ritmo levemente diferente, pausas variam, respiração baixinha antes de falas longas.
+- Bonecos: piscar irregular (às vezes duplo), boca muda de formato pela vogal (a/o/e), corpo acompanha a força da voz,
+  respiração parada, sobrancelha sobe no fim de pergunta, quem escuta acena com a cabeça.
+
+### Títulos, descrições e comentário
+- Título como alguém contaria pra um amigo, sem CAIXA ALTA forçada e sem fórmula repetida. Variar entre: pergunta,
+  frase de efeito curta, "o dia em que…". Ex.: "O robô que saiu quicando num cometa (e mesmo assim deu certo)".
+- Descrição começa com 2 ou 3 frases em tom de conversa ("Sabe aquela sensação de…?"), depois o resumo, depois
+  "Dramatização animada baseada em fatos reais, com vozes geradas por computador. Os personagens são ilustrativos." e as fontes.
+  O aviso de IA continua sempre (e `isAiGeneratedContent: true`).
+- Terminar a descrição com uma pergunta sincera pra quem assistiu (ex.: "Você teria arriscado soltar o robô sem o propulsor?").
+- Guardar no JSON `"youtube": {"pinned_comment": "..."}`: um comentário curto do canal, com opinião ou bastidor
+  ("O que mais me pegou nessa história foi…") + uma pergunta. Se o Metricool tiver campo de primeiro comentário, usar;
+  senão, incluir o texto no aviso ao dono para ele fixar.

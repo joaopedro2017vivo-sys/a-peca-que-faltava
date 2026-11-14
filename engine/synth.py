@@ -245,3 +245,11 @@ def flutter(d):
 
 def quindar(f): return tone(f, 0.25) * 0.5
 
+
+
+def breath(d=0.32):
+    """Respiração curta antes de uma fala longa (bem baixa, só para não soar robótico)."""
+    tt = tarr(d)
+    n = filt(noise(d), 'band', (500, 2600)) * 0.6 + filt(noise(d), 'band', (2600, 6000)) * 0.25
+    e = np.sin(np.pi * np.clip(tt / d, 0, 1)) ** 1.6
+    return n * e

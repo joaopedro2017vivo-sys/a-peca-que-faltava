@@ -72,6 +72,35 @@ def split_recording(path, n, workdir):
     return None
 
 
+# ------------------------------------------------------------ voz mais humana
+# Emoção de cada fala: (fator de velocidade, semitons). length_scale menor = fala mais rápida.
+EMO = {'worried': (0.94, 0.6), 'surprised': (0.96, 1.2), 'happy': (0.97, 0.8), 'determined': (1.04, -0.5),
+       'cold': (1.0, 0.0), 'neutral': (1.0, 0.0)}
+MOOD_SPEED = {'tense': 0.95, 'triumph': 0.98, 'hope': 1.0, 'calm': 1.02}
+
+
+def split_chunks(text):
+    """Divide a fala em frases e marca pausas dramáticas (… ou ...). Devolve [(trecho, pausa_depois_s)]."""
+    t = text.replace('...', '…')
+    parts = re.split(r'(…|(?<=[.!?])\s+)', t)
+    out = []; cur = ''
+    for p in parts:
+        if p is None: continue
+        if p == '…':
+            if cur.strip(): out.append([cur.strip(), 0.42])
+            cur = ''
+        elif not p.strip():
+            if cur.strip():
+                end = cur.strip()[-1]
+                out.append([cur.strip(), 0.30 if end == '?' else 0.24 if end == '!' else 0.20])
+            cur = ''
+        else:
+            cur += p
+    if cur.strip(): out.append([cur.strip(), 0.0])
+    if out: out[-1][1] = 0.0
+    return [tuple(x) for x in out] or [(text, 0.0)]
+
+
 def make_voices(story_path, out):
     d = json.load(open(story_path))
     vdir = os.path.join(out, 'voice'); os.makedirs(vdir, exist_ok=True)
@@ -106,11 +135,30 @@ def make_voices(story_path, out):
                 durs[i] = {'dur': len(x) / 48000, 'env': [float(np.sqrt(np.mean(x[j:j + hop] ** 2))) for j in range(0, len(x), hop)], 'own': True}
                 i += 1
                 continue
-            run([PIPER, '--model', model, '--config', model + '.json', '--output_file', raw, '--length_scale', str(v['speed']),
-                 '--noise_scale', '0.55', '--noise_w', '0.6', '--sentence_silence', '0.12'], speech_text(L['text'], extra).encode(), env)
+            # emoção e clima da cena mudam ritmo e altura; cada frase sai num ritmo um pouco diferente
+            emo = L.get('e', sc.get('expr', 'neutral')) if spk != 'N' else 'neutral'
+            fs, ps = EMO.get(emo, (1.0, 0.0))
+            if spk != 'N': fs *= MOOD_SPEED.get(sc.get('mood', 'calm'), 1.0)
+            rnd = np.random.default_rng(1000 + i)
+            pieces = []; psr = 22050
+            for k, (chunk, gap) in enumerate(split_chunks(L['text'])):
+                craw = os.path.join(vdir, f'raw_{i:03d}_{k}.wav')
+                ls = v['speed'] * fs * float(rnd.uniform(0.95, 1.05))
+                if k == 0 and len(chunk) < 25: ls *= 0.97          # reação curta sai mais rápida
+                run([PIPER, '--model', model, '--config', model + '.json', '--output_file', craw, '--length_scale', f'{ls:.3f}',
+                     '--noise_scale', '0.667', '--noise_w', '0.8', '--sentence_silence', '0.08'],
+                    speech_text(chunk, extra).encode(), env)
+                psr, cx = wavfile.read(craw); os.remove(craw)
+                cx = cx.astype(np.float32)
+                nz = np.nonzero(np.abs(cx) > 300)[0]           # corta silêncio do Piper para a pausa ficar sob controle
+                if len(nz): cx = cx[max(0, nz[0] - 400):nz[-1] + 1200]
+                pieces.append(cx)
+                if gap: pieces.append(np.zeros(int(psr * gap * float(rnd.uniform(0.85, 1.2))), np.float32))
+            wavfile.write(raw, psr, np.clip(np.concatenate(pieces), -32767, 32767).astype(np.int16))
             chain = ['aresample=48000:resampler=soxr', 'afftdn=nf=-32:tn=1', 'agate=threshold=0.012:ratio=3:attack=3:release=120']
-            if v.get('pitch'):
-                chain.append(f"rubberband=pitch={2 ** (v['pitch'] / 12):.4f}:pitchq=quality:formant=preserved")
+            pitch = float(v.get('pitch', 0)) + ps
+            if abs(pitch) > 0.05:
+                chain.append(f"rubberband=pitch={2 ** (pitch / 12):.4f}:pitchq=quality:formant=preserved")
             chain += ['highpass=f=70', 'lowpass=f=10500', 'equalizer=f=220:t=q:w=1:g=1.5', 'equalizer=f=2800:t=q:w=1.4:g=2',
                       'equalizer=f=6500:t=q:w=1.5:g=-2', 'acompressor=threshold=-22dB:ratio=2.5:attack=8:release=120:makeup=2']
             if spk == 'N':
@@ -183,6 +231,9 @@ def make_audio(S, vdir, seq=None):
         if ln.ex.get('endcard'):
             Y.add(sfx, t0 + 0.1, Y.boom(1.8) * 0.6, 0.45); Y.add(sfx, t0 + 0.7, Y.pop(500, 1200), 0.35)
         if ln.voice:
+            # respiração antes de falas longas que começam depois de uma pausa
+            if not ln.voice.get('own') and len(ln.text) > 60 and not ln.ex.get('radio') and (k == 0 or seq[k - 1][0].spk != ln.spk or len(ln.text) > 110):
+                Y.add(voz, t0 + 0.08 - 0.34, Y.breath(0.32), 0.022 if ln.spk == 'N' else 0.028)
             sr_, v = wavfile.read(os.path.join(vdir, f'line_{ln.i:03d}.wav'))
             Y.add(voz, t0 + 0.08, v.astype(np.float64) / 32768, 1.0)
         prev_scene = sc

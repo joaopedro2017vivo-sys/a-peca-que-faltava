@@ -225,8 +225,10 @@ def face(cid, sc, eyes, look, mouth, brows):
         c.rr(-14, my - 6, 14, my + 6, 4, fill=(255, 255, 255, 255), w=4)
         c.line([(-6, my - 6), (-6, my + 6)], w=2); c.line([(5, my - 6), (5, my + 6)], w=2)
     else:
-        m = int(mouth)
+        m = int(mouth[0]); shp = mouth[1:]
         rx, ry = [(11, 4), (11, 6), (13, 10), (15, 14)][m]
+        if shp == 'o': rx, ry = rx * 0.72, ry * 1.12       # vogal redonda (o, u)
+        elif shp == 'e': rx, ry = rx * 1.22, ry * 0.68     # vogal esticada (e, i)
         c.ell(0, my, rx, ry, fill=red, w=4)
         if m >= 2:
             c.ell(0, my + ry * 0.45, rx * 0.6, ry * 0.36, fill=(232, 112, 122, 255), ol=None)

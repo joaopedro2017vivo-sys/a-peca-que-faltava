@@ -18,6 +18,20 @@ NARR_COL = (150, 160, 180)
 class Line: pass
 
 
+def breath_gap(L, nxt, sc, i):
+    """Pausa depois de uma fala, como numa conversa de verdade: réplica rápida, pausa depois de pergunta ou reticências."""
+    if 'pause' in L: return float(L['pause'])
+    t = L['text'].rstrip()
+    g = 0.22 if L['spk'] == 'N' else 0.3
+    if nxt is not None and nxt['spk'] not in ('N', L['spk']) and L['spk'] != 'N':
+        g = 0.14 if sc.get('mood') == 'tense' else 0.2          # um personagem responde ao outro
+    if t.endswith('?'): g += 0.15
+    if t.endswith('...') or t.endswith('…'): g += 0.35
+    if nxt is None: g += 0.12                                     # fim de cena respira um pouco mais
+    g += ((i * 7919) % 13 - 6) / 100                              # variação pequena e fixa (±0,06 s)
+    return max(0.1, g)
+
+
 class Story:
     def __init__(self, path, voice_dir):
         self.d = json.load(open(path))
@@ -36,11 +50,11 @@ class Story:
             gy, fl, _ = INFO[sc['bg']]
             sc['layout'] = [(cid, xs[k], gy - (20 if fl else 0), 1.0, fl) for k, cid in enumerate(sc['cast'][:3])]
             src_lines = sc['lines']; sc['lines'] = []
-            for L in src_lines:
+            for li, L in enumerate(src_lines):
                 ln = Line(); ln.i = i; ln.scene = sc; ln.spk = L['spk']; ln.text = L['text']; ln.ex = L
                 ln.voice = self.voice.get(i)
                 if ln.voice:
-                    d = max(1.4, VO + ln.voice['dur'] + (0.22 if ln.spk == 'N' else 0.3))
+                    d = max(1.4, VO + ln.voice['dur'] + breath_gap(L, src_lines[li + 1] if li + 1 < len(src_lines) else None, sc, i))
                 else:
                     d = max(2.2, len(ln.text) / (15 if ln.spk == 'N' else 13.5) + 0.6)
                 if L.get('hold'): d += float(L['hold'])
@@ -76,16 +90,59 @@ def word_time(ln, word):
 VOW = set('aáàâãeéêoóôõ')
 
 
+ROUND = set('oóôõuú'); WIDE = set('eéêií')
+
+
+def vowel_shape(ln, tl):
+    """Formato da boca pela vogal mais próxima do ponto da fala: a (aberta), o (redonda), e (esticada)."""
+    n = len(ln.text)
+    if not n: return ''
+    i = min(n - 1, int(max(0, tl - VO) / max(0.3, ln.sdur) * n))
+    for d in (0, 1, -1, 2, -2):
+        j = i + d
+        if 0 <= j < n:
+            ch = ln.text[j].lower()
+            if ch in ROUND: return 'o'
+            if ch in WIDE: return 'e'
+            if ch in VOW: return ''
+    return ''
+
+
+def voice_amp(ln, tl):
+    if not ln.voice: return 0.0
+    env = ln.voice['env']; k = int((tl - VO) * FPS)
+    if k < 0 or k >= len(env): return 0.0
+    return min(1.0, env[k] / 0.22)
+
+
 def mouth_level(ln, tl):
     if ln.voice:
         env = ln.voice['env']; k = int((tl - VO) * FPS)
-        if k < 0 or k >= len(env): return 0
+        if k < 0 or k >= len(env): return '0'
         v = max(env[k], 0.6 * env[min(k + 1, len(env) - 1)])
-        return 3 if v > 0.2 else 2 if v > 0.12 else 1 if v > 0.045 else 0
+        m = 3 if v > 0.2 else 2 if v > 0.12 else 1 if v > 0.045 else 0
+        return str(m) + (vowel_shape(ln, tl) if m >= 2 else '')
     n = len(ln.text); i = min(n - 1, int(max(0, tl - VO) / ln.sdur * n)); ch = ln.text[i].lower(); q = int(tl * 13)
-    if ch in VOW: return 3 if q % 3 else 2
-    if ch.isalpha(): return 1 if q % 2 else 2
-    return 0
+    if ch in VOW: return str(3 if q % 3 else 2) + vowel_shape(ln, tl)
+    if ch.isalpha(): return '1' if q % 2 else '2'
+    return '0'
+
+
+def _rand(a, b):
+    x = math.sin(a * 12.9898 + b * 78.233) * 43758.5453
+    return x - math.floor(x)
+
+
+def blinking(t, seed):
+    """Piscar irregular (2 a 5 s), às vezes piscada dupla, como gente."""
+    W = 3.2
+    w = math.floor((t + seed * 1.7) / W)
+    for ww in (w - 1, w):
+        r = _rand(ww, seed)
+        c = ww * W - seed * 1.7 + 0.3 + r * (W - 0.6)
+        if abs(t - c) < 0.065: return True
+        if r > 0.8 and abs(t - (c + 0.24)) < 0.06: return True
+    return False
 
 
 def wrap(text, f, maxw):
@@ -129,10 +186,19 @@ def pose_for(S, ln, tl, t, cid, x, layout):
             la, ra = lerp(pla, la, k), lerp(pra, ra, k)
     if e not in EXPR: e = 'neutral'
     brows, rmouth, reyes = EXPR[e]
-    mouth = str(mouth_level(ln, tl)) if talking else rmouth
+    mouth = mouth_level(ln, tl) if talking else rmouth
     eyes = reyes
     if talking and eyes == 'happy': eyes = 'open'
-    if eyes in ('open', 'wide') and ((t + seed * 1.7) % 3.6) < 0.13: eyes = 'closed'
+    if eyes in ('open', 'wide') and blinking(t, seed): eyes = 'closed'
+    # pergunta: sobrancelha sobe no fim da frase
+    if talking and ln.text.rstrip().endswith('?') and (tl - VO) > ln.sdur * 0.6: brows = 'up'
+    amp = voice_amp(ln, tl) if talking else 0.0
+    nod = 0.0
+    if not talking and ln.spk not in ('N', 'END', cid) and ln.voice:
+        # quem escuta acena com a cabeça de vez em quando no fim da fala do outro
+        end = VO + ln.sdur
+        if _rand(ln.i, seed) > 0.4 and end - 0.9 < tl < end - 0.1:
+            nod = math.sin((tl - (end - 0.9)) / 0.8 * math.pi * 2) * 3.5
     xs = {c[0]: c[1] for c in layout}
     if ln.spk in xs and ln.spk != cid:
         look = 1 if xs[ln.spk] > x else -1
@@ -143,9 +209,9 @@ def pose_for(S, ln, tl, t, cid, x, layout):
             look = 1 if tgt > x else -1
         else:
             look = 0
-    tilt = (3.2 * math.sin(t * 2.3 + seed)) if talking else 1.5 * math.sin(t * 0.8 + seed)
+    tilt = (2.4 * math.sin(t * 2.3 + seed) + 2.2 * amp * math.sin(t * 7.1 + seed)) if talking else 1.5 * math.sin(t * 0.8 + seed) + nod * 0.5
     return dict(la=la, ra=ra, tilt=tilt, eyes=eyes, look=look, mouth=mouth, brows=brows, turn=look,
-                fog=False), g, talking
+                fog=False, amp=amp, nod=nod), g, talking
 
 
 # ------------------------------------------------------------ câmera
@@ -387,7 +453,9 @@ def render_frame(S, gf, mode='h', fade_override=None):
         P, g, talking = pose_for(S, ln, tl, t, cid, x, lay)
         seed = seed_of(cid); dx = dy = 0
         if fl: dy = 11 * math.sin(t * 1.1 + seed * 2); dx = 5 * math.sin(t * 0.6 + seed)
-        if talking: dy -= 4 * abs(math.sin(t * 5.5))
+        if talking: dy -= 5 * P.get('amp', 0)                       # o corpo acompanha a força da voz
+        elif not fl: dy += 1.6 * math.sin(t * 1.6 + seed)          # respiração de quem está parado
+        dy += P.get('nod', 0)
         if g == 'shiver': dx += 2.5 * math.sin(t * 53)
         if g == 'cheer': dy -= 14 * abs(math.sin(t * 7))
         fy = INFO[sc['bg']][0] + (40 if fl else 4)
@@ -416,7 +484,7 @@ def render_frame(S, gf, mode='h', fade_override=None):
                 big = q(s_ * z * 1.45)
                 layer = Image.new('RGBA', (OW, OH), (0, 0, 0, 0))
                 PP = dict(P); PP['look'] = -side; PP['turn'] = -side
-                if PP['mouth'] in ('0', '1', '2', '3'): PP['mouth'] = 'smile'
+                if PP['mouth'][:1].isdigit(): PP['mouth'] = 'smile'
                 draw_char(layer, cid, OW * (0.03 if side < 0 else 0.97), OH * 0.66 + 300 * big, big, PP)
                 layer = layer.resize((OW // 4, OH // 4), Image.BILINEAR).filter(ImageFilter.GaussianBlur(3)).resize((OW, OH), Image.BICUBIC)
                 out.alpha_composite(layer)
