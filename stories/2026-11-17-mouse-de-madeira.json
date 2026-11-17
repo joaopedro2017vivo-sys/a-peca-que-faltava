@@ -1,0 +1,524 @@
+{
+ "slug": "mouse-de-madeira",
+ "title": "O mouse que era de madeira",
+ "thumb_text": "O primeiro mouse era de madeira",
+ "channel": "A Peça que Faltava",
+ "youtube": {
+  "title": "O primeiro mouse era de madeira (e o inventor não ganhou nada com ele)",
+  "description": "Sabe aquele objeto que você mexe o dia inteiro sem nem pensar? Ele começou como uma caixinha de madeira. E quem teve a ideia nunca ganhou dinheiro com ela.\n\nNo começo dos anos 1960, Douglas Engelbart, do Instituto de Pesquisa de Stanford (SRI), procurava um jeito fácil de apontar coisas na tela de um computador. Em 1964, o engenheiro Bill English construiu o primeiro protótipo: madeira, duas rodinhas perpendiculares embaixo e um fio que parecia um rabo. Em 9 de dezembro de 1968, Engelbart mostrou o mouse ao vivo em San Francisco, na apresentação que ficou conhecida como \"a mãe de todas as demos\". A patente (\"indicador de posição X-Y para um sistema de display\") saiu em 17 de novembro de 1970, mas pertencia ao SRI, que mais tarde licenciou o mouse para a Apple por cerca de 40 mil dólares. A patente venceu em 1987, e Engelbart nunca recebeu royalties.\n\nDramatização animada baseada em fatos reais, com vozes geradas por computador. Os personagens são ilustrativos.\n\nFontes:\nhttps://www.computinghistory.org.uk/det/5403/Douglas-Engelbart-invents-the-mouse/\nhttps://greatpatent.com/doug-engelbart-patented-the-mouse-and-made-ten-thousand-dollars\nhttps://sri.com/hoi/computer-mouse-and-interactive-computing/\nhttps://computerhistory.org/sri-mouse-mn052024/\nhttps://computerhistory.org/blog/net-50-did-engelbart-s-mother-of-all-demos-launch-the-connected-world/\nhttps://dougengelbart.org/theDemo\nhttps://ipkitten.blogspot.com/2013/07/the-patent-legacy-of-computer-mouse.html\n\nE você: acha que o inventor deveria ter ganhado alguma coisa, ou a ideia ser de todo mundo foi o que fez o mouse dar certo?\n\n#mouse #tecnologia #historia #curiosidades #computador",
+  "tags": [
+   "mouse",
+   "douglas engelbart",
+   "história do computador",
+   "bill english",
+   "mãe de todas as demos",
+   "tecnologia",
+   "invenções",
+   "curiosidades",
+   "animação",
+   "SRI"
+  ],
+  "short_title": "O primeiro mouse era uma caixinha de madeira #shorts",
+  "short_description": "Em 1964, o primeiro mouse foi feito de madeira, com duas rodinhas. O inventor nunca recebeu royalties. Dramatização animada baseada em fatos reais, com vozes geradas por computador.\n\n#shorts #mouse #tecnologia #historia #curiosidades",
+  "pinned_comment": "O que mais me pegou nessa história: em 1968 já tinha videochamada e documento compartilhado, e a gente achando que isso era coisa recente. Qual invenção você acha que também chegou décadas antes da hora?"
+ },
+ "fontes": [
+  "https://www.computinghistory.org.uk/det/5403/Douglas-Engelbart-invents-the-mouse/",
+  "https://greatpatent.com/doug-engelbart-patented-the-mouse-and-made-ten-thousand-dollars",
+  "https://sri.com/hoi/computer-mouse-and-interactive-computing/",
+  "https://computerhistory.org/sri-mouse-mn052024/",
+  "https://computerhistory.org/blog/net-50-did-engelbart-s-mother-of-all-demos-launch-the-connected-world/",
+  "https://dougengelbart.org/theDemo",
+  "https://ipkitten.blogspot.com/2013/07/the-patent-legacy-of-computer-mouse.html"
+ ],
+ "pronounce": [
+  [
+   "Engelbart",
+   "Éngelbart"
+  ],
+  [
+   "Douglas",
+   "Dâglas"
+  ],
+  [
+   "Bill English",
+   "Bil Ínglish"
+  ],
+  [
+   "SRI",
+   "ésse érre í"
+  ],
+  [
+   "Apple",
+   "Épol"
+  ],
+  [
+   "Mouse",
+   "Máuse"
+  ],
+  [
+   "mouses",
+   "máuses"
+  ],
+  [
+   "mouse",
+   "máuse"
+  ],
+  [
+   "display",
+   "displêi"
+  ],
+  [
+   "San Francisco",
+   "San Francísco"
+  ]
+ ],
+ "narrator": {
+  "voice": "cadu-medium",
+  "speed": 0.9
+ },
+ "cast": {
+  "E": {
+   "name": "Engenheiro",
+   "kind": "person",
+   "outfit": "lab",
+   "color": [
+    230,
+    120,
+    40
+   ],
+   "skin": [
+    236,
+    192,
+    160
+   ],
+   "hair": [
+    110,
+    70,
+    40
+   ],
+   "hairstyle": "short",
+   "glasses": true,
+   "shirt": [
+    90,
+    110,
+    150
+   ],
+   "tie": true,
+   "voice": "jeff-medium",
+   "speed": 0.95,
+   "pitch": -1
+  },
+  "P": {
+   "name": "Pesquisadora",
+   "kind": "person",
+   "outfit": "lab",
+   "color": [
+    150,
+    90,
+    200
+   ],
+   "skin": [
+    180,
+    128,
+    92
+   ],
+   "hair": [
+    30,
+    24,
+    20
+   ],
+   "hairstyle": "long",
+   "lashes": true,
+   "shirt": [
+    200,
+    80,
+    90
+   ],
+   "voice": "dii-high",
+   "speed": 0.93,
+   "pitch": 0
+  },
+  "R": {
+   "name": "Repórter",
+   "kind": "person",
+   "outfit": "suit",
+   "color": [
+    60,
+    170,
+    110
+   ],
+   "skin": [
+    120,
+    80,
+    56
+   ],
+   "hair": [
+    20,
+    16,
+    14
+   ],
+   "hairstyle": "short",
+   "beard": true,
+   "badge": true,
+   "voice": "faber-medium",
+   "speed": 0.95,
+   "pitch": -2
+  }
+ },
+ "scenes": [
+  {
+   "bg": "studio",
+   "mood": "tense",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Olha pra sua mão agora. Tem boa chance de ela estar em cima de um mouse… ou de ter estado, até agora há pouco.",
+     "show": {
+      "icon": "question"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Pois é. Esse bichinho nasceu como um bloco de madeira com duas rodinhas. E o inventor nunca ganhou um centavo com ele.",
+     "show": {
+      "pill": "Royalties pro inventor: zero"
+     },
+     "sfx": "thud",
+     "sfx_at": 2.5,
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "bg": "office",
+   "mood": "calm",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Califórnia, começo dos anos sessenta. No Instituto de Pesquisa de Stanford, o SRI, trabalhava um engenheiro chamado Douglas Engelbart.",
+     "show": {
+      "title": "Instituto de Pesquisa de Stanford",
+      "sub": "Califórnia, anos 1960"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "E ele tinha uma ideia fixa. Computador não era só pra fazer conta. Era pra ajudar gente a pensar… e a trabalhar junto.",
+     "show": {
+      "icon": "bulb"
+     }
+    }
+   ]
+  },
+  {
+   "bg": "lab",
+   "mood": "calm",
+   "lines": [
+    {
+     "spk": "P",
+     "text": "O problema é apontar. Como é que a gente diz pra máquina: é aqui, nesse ponto da tela?",
+     "g": "pointR",
+     "e": "worried"
+    },
+    {
+     "spk": "E",
+     "text": "Caneta de luz, alavanca… a gente já testou um monte de coisa.",
+     "g": "shrug",
+     "e": "neutral",
+     "acts": {
+      "P": [
+       "idle",
+       "neutral"
+      ]
+     }
+    },
+    {
+     "spk": "P",
+     "text": "E tudo cansa o braço. Ou erra o alvo.",
+     "g": "talk",
+     "e": "worried"
+    },
+    {
+     "spk": "N",
+     "text": "A solução foi bem simples. Uma caixinha que você empurra em cima da mesa. Embaixo, duas rodinhas, uma de cada jeito.",
+     "show": {
+      "icon": "gear"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Uma rodinha mede o movimento pros lados. A outra, pra frente e pra trás. Junta as duas… e você tem a posição na tela.",
+     "show": {
+      "list": [
+       "Pros lados",
+       "Frente e trás",
+       "Ponto na tela"
+      ]
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Quem construiu o primeiro foi o engenheiro Bill English, em 1964. E de que material? Madeira.",
+     "show": {
+      "year": "1964"
+     },
+     "pause": 0.6
+    },
+    {
+     "spk": "E",
+     "text": "Peraí, peraí. Madeira? Num laboratório de computação?",
+     "g": "open",
+     "e": "surprised"
+    },
+    {
+     "spk": "P",
+     "text": "Ué. Funciona, né?",
+     "g": "talk",
+     "e": "happy",
+     "sfx": "clunk",
+     "sfx_at": 0.3
+    }
+   ],
+   "cast": [
+    "P",
+    "E"
+   ],
+   "expr": "neutral"
+  },
+  {
+   "bg": "lab",
+   "mood": "hope",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "E o nome? Olha, até hoje ninguém sabe direito quem falou primeiro.",
+     "show": {
+      "icon": "question"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Mas com aquele fio saindo, que nem um rabinho, a caixinha parecia um ratinho. Em inglês, mouse. E o apelido pegou.",
+     "show": {
+      "big": "mouse"
+     }
+    },
+    {
+     "spk": "E",
+     "text": "Mouse. Rato. Até que combina.",
+     "g": "cheer",
+     "e": "happy"
+    },
+    {
+     "spk": "N",
+     "text": "Só que no papel oficial o nome era outro. Na patente, ele virou um indicador de posição xis ípsilon para um sistema de display.",
+     "show": {
+      "pill": "Indicador de posição X-Y"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Sinceramente? Ainda bem que o apelido ganhou.",
+     "hold": 0.5
+    }
+   ],
+   "cast": [
+    "E",
+    "P"
+   ],
+   "expr": "neutral"
+  },
+  {
+   "bg": "city_day",
+   "mood": "tense",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Aí chega o dia nove de dezembro de 1968. San Francisco, numa grande conferência de computação.",
+     "show": {
+      "year": "1968"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Mais de mil profissionais na plateia. E Engelbart no palco, com o tal do mouse na mão.",
+     "show": {
+      "icon": "globe"
+     }
+    }
+   ]
+  },
+  {
+   "bg": "studio",
+   "mood": "triumph",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Por uns noventa minutos, ele mostrou ao vivo coisas que ninguém tinha visto juntas.",
+     "show": {
+      "list": [
+       "Mouse",
+       "Janelas",
+       "Links",
+       "Vídeo ao vivo"
+      ]
+     }
+    },
+    {
+     "spk": "R",
+     "text": "Peraí. Isso em 1968?",
+     "g": "open",
+     "e": "surprised"
+    },
+    {
+     "spk": "P",
+     "text": "Isso. Com gente aparecendo por vídeo, de outro lugar, mexendo no mesmo documento.",
+     "g": "talk",
+     "e": "happy"
+    },
+    {
+     "spk": "R",
+     "text": "Isso parece reunião de hoje em dia!",
+     "g": "pointL",
+     "e": "surprised",
+     "sfx": "applause",
+     "sfx_at": 1.0
+    },
+    {
+     "spk": "N",
+     "text": "Hoje essa apresentação tem até apelido: a mãe de todas as demos.",
+     "show": {
+      "pill": "A mãe de todas as demos"
+     }
+    }
+   ],
+   "cast": [
+    "R",
+    "P"
+   ],
+   "expr": "neutral"
+  },
+  {
+   "bg": "office",
+   "mood": "calm",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "A patente tinha sido pedida em 1967. E saiu num dia como hoje: 17 de novembro de 1970.",
+     "show": {
+      "year": "17/11/1970"
+     },
+     "sfx": "chime",
+     "sfx_at": 3.0
+    },
+    {
+     "spk": "N",
+     "text": "Agora repara num detalhe. A patente não era do Engelbart. Era do instituto onde ele trabalhava.",
+     "show": {
+      "icon": "book"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Anos depois, o SRI licenciou o mouse pra Apple. Por quanto? Algo perto de quarenta mil dólares.",
+     "show": {
+      "big": "US$ 40 mil"
+     },
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "bg": "studio",
+   "mood": "tense",
+   "lines": [
+    {
+     "spk": "R",
+     "text": "Quarenta mil? Pelo mouse?",
+     "g": "open",
+     "e": "surprised"
+    },
+    {
+     "spk": "P",
+     "text": "E tem mais. Patente não dura pra sempre.",
+     "g": "talk",
+     "e": "determined"
+    },
+    {
+     "spk": "N",
+     "text": "Essa venceu em 1987. Bem quando o mouse começava a se espalhar pelas mesas do mundo.",
+     "show": {
+      "year": "1987"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Desde então, já foram vendidos algo como um bilhão de mouses. E Engelbart nunca recebeu royalties por nenhum deles.",
+     "show": {
+      "compare": [
+       "1 bilhão de mouses",
+       "0 de royalties"
+      ]
+     },
+     "sfx": "thud",
+     "sfx_at": 4.0
+    },
+    {
+     "spk": "R",
+     "text": "Opa. Isso dói.",
+     "g": "shrug",
+     "e": "worried"
+    }
+   ],
+   "cast": [
+    "R",
+    "P"
+   ],
+   "expr": "neutral"
+  },
+  {
+   "bg": "studio",
+   "mood": "hope",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Mas olha… a ideia que movia ele era outra. Computador pra ajudar gente a pensar e a trabalhar junto.",
+     "show": {
+      "icon": "heart"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "E a peça que faltava pra isso era uma caixinha de madeira. Duas rodinhas… e um rabo.",
+     "show": {
+      "icon": "bulb"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Da próxima vez que você clicar em alguma coisa, lembra dela.",
+     "show": {
+      "icon": "check"
+     },
+     "hold": 1.0
+    }
+   ]
+  }
+ ],
+ "short": [
+  0,
+  1,
+  7,
+  9,
+  10,
+  11,
+  13,
+  14,
+  25,
+  26,
+  27,
+  30,
+  33
+ ]
+}
