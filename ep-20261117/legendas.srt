@@ -1,0 +1,139 @@
+1
+00:00:00,000 --> 00:00:06,600
+Olha pra sua mão agora. Tem boa chance de ela estar em cima de um mouse… ou de ter estado, até agora há pouco.
+
+2
+00:00:06,700 --> 00:00:13,267
+Pois é. Esse bichinho nasceu como um bloco de madeira com duas rodinhas. E o inventor nunca ganhou um centavo com ele.
+
+3
+00:00:13,367 --> 00:00:22,200
+Califórnia, começo dos anos sessenta. No Instituto de Pesquisa de Stanford, o SRI, trabalhava um engenheiro chamado Douglas Engelbart.
+
+4
+00:00:22,300 --> 00:00:29,767
+E ele tinha uma ideia fixa. Computador não era só pra fazer conta. Era pra ajudar gente a pensar… e a trabalhar junto.
+
+5
+00:00:29,867 --> 00:00:35,167
+O problema é apontar. Como é que a gente diz pra máquina: é aqui, nesse ponto da tela?
+
+6
+00:00:35,267 --> 00:00:39,933
+Caneta de luz, alavanca… a gente já testou um monte de coisa.
+
+7
+00:00:40,033 --> 00:00:42,667
+E tudo cansa o braço. Ou erra o alvo.
+
+8
+00:00:42,767 --> 00:00:50,033
+A solução foi bem simples. Uma caixinha que você empurra em cima da mesa. Embaixo, duas rodinhas, uma de cada jeito.
+
+9
+00:00:50,133 --> 00:00:58,100
+Uma rodinha mede o movimento pros lados. A outra, pra frente e pra trás. Junta as duas… e você tem a posição na tela.
+
+10
+00:00:58,200 --> 00:01:05,367
+Quem construiu o primeiro foi o engenheiro Bill English, em 1964. E de que material? Madeira.
+
+11
+00:01:05,467 --> 00:01:09,233
+Peraí, peraí. Madeira? Num laboratório de computação?
+
+12
+00:01:09,333 --> 00:01:11,433
+Ué. Funciona, né?
+
+13
+00:01:11,533 --> 00:01:15,833
+E o nome? Olha, até hoje ninguém sabe direito quem falou primeiro.
+
+14
+00:01:15,933 --> 00:01:22,900
+Mas com aquele fio saindo, que nem um rabinho, a caixinha parecia um ratinho. Em inglês, mouse. E o apelido pegou.
+
+15
+00:01:23,000 --> 00:01:26,233
+Mouse. Rato. Até que combina.
+
+16
+00:01:26,333 --> 00:01:33,400
+Só que no papel oficial o nome era outro. Na patente, ele virou um indicador de posição xis ípsilon para um sistema de display.
+
+17
+00:01:33,500 --> 00:01:37,067
+Sinceramente? Ainda bem que o apelido ganhou.
+
+18
+00:01:37,167 --> 00:01:44,433
+Aí chega o dia nove de dezembro de 1968. San Francisco, numa grande conferência de computação.
+
+19
+00:01:44,533 --> 00:01:49,467
+Mais de mil profissionais na plateia. E Engelbart no palco, com o tal do mouse na mão.
+
+20
+00:01:49,567 --> 00:01:53,900
+Por uns noventa minutos, ele mostrou ao vivo coisas que ninguém tinha visto juntas.
+
+21
+00:01:54,000 --> 00:01:56,700
+Peraí. Isso em 1968?
+
+22
+00:01:56,800 --> 00:02:01,933
+Isso. Com gente aparecendo por vídeo, de outro lugar, mexendo no mesmo documento.
+
+23
+00:02:02,033 --> 00:02:04,033
+Isso parece reunião de hoje em dia!
+
+24
+00:02:04,133 --> 00:02:07,967
+Hoje essa apresentação tem até apelido: a mãe de todas as demos.
+
+25
+00:02:08,067 --> 00:02:16,233
+A patente tinha sido pedida em 1967. E saiu num dia como hoje: 17 de novembro de 1970.
+
+26
+00:02:16,333 --> 00:02:22,233
+Agora repara num detalhe. A patente não era do Engelbart. Era do instituto onde ele trabalhava.
+
+27
+00:02:22,333 --> 00:02:29,533
+Anos depois, o SRI licenciou o mouse pra Apple. Por quanto? Algo perto de quarenta mil dólares.
+
+28
+00:02:29,633 --> 00:02:31,433
+Quarenta mil? Pelo mouse?
+
+29
+00:02:31,533 --> 00:02:34,233
+E tem mais. Patente não dura pra sempre.
+
+30
+00:02:34,333 --> 00:02:40,567
+Essa venceu em 1987. Bem quando o mouse começava a se espalhar pelas mesas do mundo.
+
+31
+00:02:40,667 --> 00:02:47,400
+Desde então, já foram vendidos algo como um bilhão de mouses. E Engelbart nunca recebeu royalties por nenhum deles.
+
+32
+00:02:47,500 --> 00:02:49,100
+Opa. Isso dói.
+
+33
+00:02:49,200 --> 00:02:55,267
+Mas olha… a ideia que movia ele era outra. Computador pra ajudar gente a pensar e a trabalhar junto.
+
+34
+00:02:55,367 --> 00:03:00,867
+E a peça que faltava pra isso era uma caixinha de madeira. Duas rodinhas… e um rabo.
+
+35
+00:03:00,967 --> 00:03:05,733
+Da próxima vez que você clicar em alguma coisa, lembra dela.
