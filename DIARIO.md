@@ -28,3 +28,11 @@
 - make.py: 1ª geração QA OK (188,7 s), mas a folha mostrou a lista das rodinhas com pílulas cortadas/sobrepostas; encurtei os itens das duas listas. 2ª geração: QA OK (189,3 s; short 75,6 s; −14,1 LUFS).
 - Branch videos: ep-20261117 (commit normal por cima).
 - Metricool: vídeo hoje 20:00 (uuid -6786672992015070213, com thumb própria e primeiro comentário), Short amanhã 12:00 (uuid 4052884119274737441); mídia baixada (static.metricool.com) nos dois. Só YouTube conectado → sem Instagram/TikTok.
+
+## 2026-11-19
+- Revisão: mouse de madeira publicado (vídeo 17/11 20:00 https://www.youtube.com/watch?v=vEyc2IVV9Lo; Short 18/11 12:00 https://www.youtube.com/shorts/kiAHrSsHm4Y). Nenhum erro no Metricool. Nada agendado para hoje antes desta execução.
+- Windsor.ai (youtube, últimos 14 dias): Short Philae 316/9; Short Citicorp 58/1; Short Apollo 13 35/0; vídeos longos: Apollo 13 28/2, Citicorp 22/2, Philae 9/1. Mouse (vídeo e Short) ainda sem dados sincronizados.
+- Tema: Apollo 12 (aniversário do pouso, 19/11/1969) — decolagem sob chuva em 14/11/1969, raios aos ~36 s e 52 s, luzes de alerta, três células de combustível fora, telemetria embaralhada; John Aaron reconheceu o padrão de uma simulação ("SCE to AUX"); Alan Bean sabia onde ficava a chave; pouso no Oceano das Tempestades a <200 m da Surveyor 3 (abril/1967); primeira frase de Conrad; câmera de TV queimada apontada pro Sol; ~8 h em 2 caminhadas; câmera e peças da Surveyor trazidas de volta. Checado em NASA (2 páginas), AmericaSpace, Live Science, Sky at Night. De fora (fonte única ou conflito): medo dos paraquedas, aposta com Oriana Fallaci, altura de Conrad, distância exata (538 ft / 600 ft / 182 m → "menos de 200 m"), data do amerrissagem, 4 km de erro da Apollo 11. Falas de personagens só com controladores genéricos; frases de pessoas reais apenas pelo narrador.
+- make.py: QA OK na 1ª tentativa (196,1 s; short 92,5 s; −14,3/−14,5 LUFS). Folhas e thumb conferidas: nada cortado/sobreposto.
+- Branch videos: ep-20261119 (commit normal por cima).
+- Metricool: vídeo hoje 20:00 (uuid 4844718927233761459, thumb própria + primeiro comentário), Short amanhã 12:00 (uuid -2865097289912859678); mídia baixada (static.metricool.com) nos dois. Só YouTube conectado → sem Instagram/TikTok.

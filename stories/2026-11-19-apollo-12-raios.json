@@ -1,0 +1,583 @@
+{
+ "slug": "apollo-12-raios",
+ "title": "O foguete que levou dois raios",
+ "thumb_text": "Dois raios. E foram pra Lua mesmo assim.",
+ "channel": "A Peça que Faltava",
+ "youtube": {
+  "title": "O foguete levou dois raios na decolagem… e foi pra Lua mesmo assim (Apollo 12)",
+  "description": "Já pensou estar sentado em cima de um foguete e ele ser atingido por um raio? Agora imagina isso duas vezes, no primeiro minuto de voo.\n\nEm 14 de novembro de 1969, a Apollo 12 decolou da Flórida debaixo de chuva e nuvens. Aos 36 e aos 52 segundos de voo, foi atingida por raios: luzes de alerta acenderam, as três células de combustível caíram e os dados chegaram embaralhados ao controle da missão. O controlador John Aaron reconheceu o padrão de uma simulação e sugeriu mudar o SCE (equipamento de condicionamento de sinais) para a posição auxiliar. Alan Bean sabia onde ficava a chave, e tudo voltou. Em 19 de novembro de 1969, o módulo lunar pousou no Oceano das Tempestades a menos de 200 metros da sonda Surveyor 3, que estava lá desde abril de 1967. Pete Conrad e Alan Bean caminharam até ela e trouxeram de volta a câmera e outras peças.\n\nDramatização animada baseada em fatos reais, com vozes geradas por computador. Os personagens são ilustrativos.\n\nFontes:\nhttps://science.nasa.gov/resource/lightning-strikes-twice/\nhttps://www.nasa.gov/history/55-years-ago-apollo-12-makes-a-pinpoint-landing-on-the-moon\nhttps://science.nasa.gov/resource/apollo-12-and-surveyor-3/\nhttps://www.americaspace.com/2019/11/17/sce-to-aux-remembering-apollo-12s-hair-raising-ride-to-the-moon-50-years-ago-part-1\nhttps://www.livescience.com/apollo-12-lightning-launch.html\nhttps://www.skyatnightmagazine.com/space-missions/apollo-12-story-second-mission-moon\n\nE você: teria lembrado onde ficava a chavinha, ou teria travado na hora?\n\n#apollo12 #nasa #espaço #historia #curiosidades",
+  "tags": [
+   "apollo 12",
+   "nasa",
+   "raio",
+   "SCE to AUX",
+   "john aaron",
+   "surveyor 3",
+   "pete conrad",
+   "alan bean",
+   "espaço",
+   "história",
+   "curiosidades",
+   "animação"
+  ],
+  "short_title": "Um raio atingiu o foguete. Duas vezes. #shorts",
+  "short_description": "Em 1969, a Apollo 12 levou dois raios na decolagem e uma chavinha quase esquecida salvou a missão. Dramatização animada baseada em fatos reais, com vozes geradas por computador.\n\n#shorts #apollo12 #nasa #espaço #curiosidades",
+  "pinned_comment": "O que mais me pegou nessa história: a solução veio de um treino que parecia só mais um treino. Você já salvou um dia ruim com algo que aprendeu 'à toa'?"
+ },
+ "fontes": [
+  "https://science.nasa.gov/resource/lightning-strikes-twice/",
+  "https://www.nasa.gov/history/55-years-ago-apollo-12-makes-a-pinpoint-landing-on-the-moon",
+  "https://science.nasa.gov/resource/apollo-12-and-surveyor-3/",
+  "https://www.americaspace.com/2019/11/17/sce-to-aux-remembering-apollo-12s-hair-raising-ride-to-the-moon-50-years-ago-part-1",
+  "https://www.livescience.com/apollo-12-lightning-launch.html",
+  "https://www.skyatnightmagazine.com/space-missions/apollo-12-story-second-mission-moon"
+ ],
+ "pronounce": [
+  [
+   "Apollo",
+   "Apólo"
+  ],
+  [
+   "Surveyor",
+   "Sârvêior"
+  ],
+  [
+   "John Aaron",
+   "Djón Éron"
+  ],
+  [
+   "Alan Bean",
+   "Álan Bín"
+  ],
+  [
+   "Pete Conrad",
+   "Pít Cônrad"
+  ],
+  [
+   "Neil Armstrong",
+   "Nil Ármistrong"
+  ],
+  [
+   "Neil",
+   "Nil"
+  ],
+  [
+   "SCE",
+   "ésse cê é"
+  ],
+  [
+   "AUX",
+   "áux"
+  ],
+  [
+   "NASA",
+   "Nása"
+  ]
+ ],
+ "narrator": {
+  "voice": "cadu-medium",
+  "speed": 0.9
+ },
+ "cast": {
+  "C": {
+   "name": "Controladora",
+   "kind": "person",
+   "outfit": "shirt",
+   "color": [
+    230,
+    120,
+    40
+   ],
+   "skin": [
+    236,
+    192,
+    160
+   ],
+   "hair": [
+    120,
+    70,
+    40
+   ],
+   "hairstyle": "bun",
+   "lashes": true,
+   "headset": true,
+   "shirt": [
+    240,
+    240,
+    235
+   ],
+   "long_sleeve": true,
+   "voice": "dii-high",
+   "speed": 0.93,
+   "pitch": 0
+  },
+  "T": {
+   "name": "Controlador",
+   "kind": "person",
+   "outfit": "shirt",
+   "color": [
+    70,
+    140,
+    220
+   ],
+   "skin": [
+    200,
+    150,
+    110
+   ],
+   "hair": [
+    40,
+    30,
+    25
+   ],
+   "hairstyle": "short",
+   "glasses": true,
+   "headset": true,
+   "tie": true,
+   "shirt": [
+    230,
+    235,
+    245
+   ],
+   "voice": "jeff-medium",
+   "speed": 0.95,
+   "pitch": -1
+  },
+  "R": {
+   "name": "Repórter",
+   "kind": "person",
+   "outfit": "suit",
+   "color": [
+    60,
+    170,
+    110
+   ],
+   "skin": [
+    120,
+    80,
+    56
+   ],
+   "hair": [
+    20,
+    16,
+    14
+   ],
+   "hairstyle": "short",
+   "beard": true,
+   "badge": true,
+   "voice": "faber-medium",
+   "speed": 0.95,
+   "pitch": -2
+  },
+  "P": {
+   "name": "Pesquisadora",
+   "kind": "person",
+   "outfit": "lab",
+   "color": [
+    150,
+    90,
+    200
+   ],
+   "skin": [
+    180,
+    128,
+    92
+   ],
+   "hair": [
+    30,
+    24,
+    20
+   ],
+   "hairstyle": "long",
+   "lashes": true,
+   "shirt": [
+    200,
+    80,
+    90
+   ],
+   "voice": "dii-high",
+   "speed": 0.93,
+   "pitch": 1
+  }
+ },
+ "scenes": [
+  {
+   "bg": "studio",
+   "mood": "tense",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Imagina estar sentado em cima do foguete mais potente do mundo… e, uns trinta e seis segundos depois de sair do chão, ele levar um raio.",
+     "show": {
+      "icon": "warning"
+     },
+     "sfx": "boom",
+     "sfx_at": 5.5
+    },
+    {
+     "spk": "N",
+     "text": "Agora imagina isso duas vezes. Foi o que aconteceu com a Apollo doze. E, mesmo assim, ela chegou na Lua.",
+     "show": {
+      "pill": "Dois raios. Uma Lua."
+     },
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "bg": "control",
+   "mood": "calm",
+   "cast": [
+    "C",
+    "T"
+   ],
+   "expr": "neutral",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Flórida, catorze de novembro de 1969. Só uns quatro meses depois do primeiro pouso na Lua.",
+     "show": {
+      "year": "14/11/1969"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "O dia tava feio. Céu fechado, nuvem baixa, chuvinha. Mas o foguete subiu mesmo assim.",
+     "show": {
+      "icon": "clock"
+     }
+    },
+    {
+     "spk": "C",
+     "text": "Decolagem limpa. Tudo verde aqui.",
+     "g": "pointR",
+     "e": "happy"
+    },
+    {
+     "spk": "N",
+     "text": "Por uns trinta e seis segundos.",
+     "pause": 0.6,
+     "sfx": "boom",
+     "sfx_at": 1.2
+    }
+   ]
+  },
+  {
+   "bg": "control",
+   "mood": "tense",
+   "cast": [
+    "C",
+    "T"
+   ],
+   "expr": "worried",
+   "lines": [
+    {
+     "spk": "T",
+     "text": "Opa. Opa! Acendeu tudo aqui!",
+     "g": "open",
+     "e": "surprised",
+     "sfx": "alarm",
+     "sfx_at": 0.2
+    },
+    {
+     "spk": "N",
+     "text": "Um raio atingiu o foguete. E aos cinquenta e dois segundos de voo… veio outro.",
+     "show": {
+      "list": [
+       "36 s: 1º raio",
+       "52 s: 2º raio"
+      ]
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Na cápsula, um monte de luz de alerta acendeu ao mesmo tempo. E as três células de combustível, que geravam a energia, caíram.",
+     "show": {
+      "icon": "warning"
+     }
+    },
+    {
+     "spk": "C",
+     "text": "Os dados tão chegando tudo embaralhado. Não dá pra ler nada!",
+     "g": "talk",
+     "e": "worried",
+     "acts": {
+      "T": [
+       "idle",
+       "worried"
+      ]
+     }
+    },
+    {
+     "spk": "T",
+     "text": "Calma. Calma. O foguete ainda tá subindo?",
+     "g": "open",
+     "e": "worried"
+    },
+    {
+     "spk": "C",
+     "text": "Tá. O foguete tá firme. A cápsula é que enlouqueceu.",
+     "g": "talk",
+     "e": "determined"
+    },
+    {
+     "spk": "N",
+     "text": "E aí vem o detalhe: ninguém ali tinha visto aquilo de verdade antes. Quase ninguém.",
+     "pause": 0.6
+    }
+   ]
+  },
+  {
+   "bg": "control",
+   "mood": "hope",
+   "cast": [
+    "C",
+    "T"
+   ],
+   "expr": "neutral",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Um controlador chamado John Aaron olhou aquele monte de número estranho… e reconheceu o padrão.",
+     "show": {
+      "icon": "bulb"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Ele já tinha visto aquilo uma vez. Num treino. Numa simulação.",
+     "show": {
+      "icon": "book"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "E soltou a frase que virou lenda na NASA: tenta o SCE no AUX.",
+     "show": {
+      "pill": "SCE → AUX"
+     },
+     "pause": 0.5
+    },
+    {
+     "spk": "T",
+     "text": "SCE? Que raio é SCE?",
+     "g": "shrug",
+     "e": "surprised"
+    },
+    {
+     "spk": "C",
+     "text": "É o equipamento que prepara os sinais dos sensores. Tem uma chave pra jogar ele no modo auxiliar.",
+     "g": "talk",
+     "e": "neutral"
+    },
+    {
+     "spk": "N",
+     "text": "Uma chavinha que quase nunca era usada. Mas lá em cima, o astronauta Alan Bean lembrava exatamente onde ela ficava.",
+     "show": {
+      "icon": "gear"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Clique. E os dados voltaram pra tela.",
+     "show": {
+      "icon": "check"
+     },
+     "sfx": "clunk",
+     "sfx_at": 0.3
+    },
+    {
+     "spk": "T",
+     "text": "Voltou! Tá tudo lendo de novo!",
+     "g": "cheer",
+     "e": "happy",
+     "acts": {
+      "C": [
+       "cheer",
+       "happy"
+      ]
+     },
+     "sfx": "applause",
+     "sfx_at": 0.8
+    },
+    {
+     "spk": "N",
+     "text": "Já em órbita da Terra, eles religaram a energia, conferiram tudo… e tava tudo funcionando. Então, partiu Lua.",
+     "show": {
+      "icon": "rocket"
+     }
+    }
+   ]
+  },
+  {
+   "bg": "space",
+   "mood": "hope",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Sinceramente? Só isso já dava um filme. Mas a Apollo doze ainda tinha um alvo bem ousado.",
+     "show": {
+      "icon": "rocket"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Pousar do lado de uma sonda robô que tava na Lua fazia dois anos e meio: a Surveyor três.",
+     "show": {
+      "title": "Surveyor 3",
+      "sub": "na Lua desde abril de 1967"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Repara: não era pousar em qualquer canto da Lua. Era acertar um ponto, no Oceano das Tempestades.",
+     "show": {
+      "pill": "Oceano das Tempestades"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Dezenove de novembro de 1969. O módulo lunar desceu… e parou a menos de duzentos metros da sonda. Dava pra ir a pé.",
+     "show": {
+      "year": "19/11/1969"
+     },
+     "sfx": "chime",
+     "sfx_at": 4.0
+    }
+   ]
+  },
+  {
+   "bg": "space_plain",
+   "mood": "triumph",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "E o comandante, Pete Conrad, desceu a escada já fazendo piada com o Neil Armstrong.",
+     "show": {
+      "icon": "globe"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Uhuu! Esse pode ter sido um passo pequeno pro Neil… mas pra mim foi um passão.",
+     "show": {
+      "pill": "“Pra mim foi um passão!”"
+     },
+     "sfx": "applause",
+     "sfx_at": 3.5
+    },
+    {
+     "spk": "N",
+     "text": "Agora, nem tudo deu certo. A câmera de TV colorida foi apontada sem querer pro Sol… e queimou. Fim da transmissão ao vivo.",
+     "show": {
+      "icon": "cross"
+     },
+     "sfx": "static",
+     "sfx_at": 5.0
+    },
+    {
+     "spk": "N",
+     "text": "Mas, em duas caminhadas de quase oito horas no total, eles foram até a Surveyor. E com um alicate de corte, tiraram a câmera dela e outras peças.",
+     "show": {
+      "list": [
+       "2 caminhadas",
+       "Quase 8 horas",
+       "Câmera da Surveyor"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "bg": "studio",
+   "mood": "hope",
+   "cast": [
+    "R",
+    "P"
+   ],
+   "expr": "neutral",
+   "lines": [
+    {
+     "spk": "R",
+     "text": "Peraí. Eles foram até a Lua buscar peça de sonda velha?",
+     "g": "open",
+     "e": "surprised"
+    },
+    {
+     "spk": "P",
+     "text": "Pra estudar! Ver o que anos de Lua fazem com uma máquina.",
+     "g": "talk",
+     "e": "happy"
+    },
+    {
+     "spk": "R",
+     "text": "Tipo um ferro-velho espacial.",
+     "g": "shrug",
+     "e": "happy"
+    },
+    {
+     "spk": "P",
+     "text": "Com a melhor vista do universo.",
+     "g": "cheer",
+     "e": "happy",
+     "sfx": "boing",
+     "sfx_at": 0.5
+    }
+   ]
+  },
+  {
+   "bg": "studio",
+   "mood": "calm",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "A tripulação voltou em segurança e caiu no Oceano Pacífico, dias depois.",
+     "show": {
+      "icon": "globe"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "E sabe qual foi a peça que faltava naquele dia dos raios? Não foi computador. Nem peça de foguete.",
+     "show": {
+      "icon": "question"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Foi alguém que prestou atenção num treino… e outro alguém que lembrava onde ficava uma chavinha.",
+     "show": {
+      "icon": "bulb"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Da próxima vez que um treino parecer perda de tempo… lembra da Apollo doze.",
+     "show": {
+      "icon": "check"
+     },
+     "hold": 1.0
+    }
+   ]
+  }
+ ],
+ "short": [
+  0,
+  1,
+  6,
+  7,
+  8,
+  9,
+  12,
+  13,
+  14,
+  15,
+  16,
+  18,
+  19,
+  20,
+  25,
+  27,
+  37
+ ]
+}
