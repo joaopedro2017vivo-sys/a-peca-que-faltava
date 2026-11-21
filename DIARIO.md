@@ -44,3 +44,4 @@
 - QA OK (151,1 s; short 86,8 s; −15,4 LUFS). Branch videos: ep-20261121-gta6.
 - Metricool: vídeo 20/11 21:40 (uuid 4599102999830875879, thumb + 1º comentário), Short 20/11 21:55 (uuid 926716543223481331); mídia baixada nos dois.
 - Voz do dono: mandou áudio de 10 s; não deu pra transcrever/clonar (precisa de link público; compartilhar no Drive foi bloqueado). Vídeo saiu com a voz gerada.
+- Atualização 21:40: dono deixou o áudio dele público no Drive; voz clonada no Speko (Cartesia, vc_7f48589f1c174050). Vídeo refeito com a voz dele (QA OK, 155,6 s; short 89,8 s). Branch videos: ep-20261121-gta6-voz. Posts no Metricool trocados para os arquivos novos: vídeo 20/11 21:55, Short 20/11 22:10 (mesmos uuids).

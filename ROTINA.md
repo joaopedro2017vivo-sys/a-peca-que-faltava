@@ -156,5 +156,10 @@ O dono pediu o canal com menos "cara de IA". Valem para todo episódio novo:
 - Gerar: `python3 engine/pixel.py stories/ARQ.json out/ARQ` (≈5 min). Conferir folhas e thumb como no outro formato.
 - YouTube: categoria GAMING, `isAiGeneratedContent: true`; descrição diz "apresentador em pixel art e voz gerada por computador"
   e "não usamos imagens do jogo".
-- Voz: por enquanto a voz gerada (cadu-medium). O dono quer a própria voz no avatar: falta uma gravação de 1–2 min dele
-  com link público para clonar (o áudio de 10 s enviado em 20/11 não pôde virar link público nesta sessão).
+- **Voz: a do dono, clonada** (Speko, voz `vc_7f48589f1c174050`, Cartesia, `provider_voice_id` 7d0a1565-4f11-4be6-8f32-3ac8a6c80c28).
+  Para cada fala, na ordem: Speko `audio_synthesize` com body
+  `{"text": FALA, "intent": {"language": "pt-BR"}, "voice": "7d0a1565-4f11-4be6-8f32-3ac8a6c80c28", "constraints": {"allowedProviders": {"tts": ["cartesia"]}}}`.
+  O resultado vem salvo como .wav (o caminho aparece no texto do resultado). Depois:
+  `python3 engine/voz_externa.py out/ARQ fala0.wav fala1.wav ...` e então `python3 engine/pixel.py stories/ARQ.json out/ARQ`.
+  Gasta crédito Speko (conta tinha US$ 10 em 20/11; ~US$ 0,x por vídeo). Se o Speko falhar ou faltar crédito, use a voz Piper
+  (cadu-medium, é só rodar o pixel.py direto) e avise o dono. Descrição: "a voz é a do João Pedro, recriada por IA".
