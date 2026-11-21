@@ -61,9 +61,13 @@ def avatar_frames(A):
             d.rounded_rectangle((3, 36, 36, 60), 8, fill=shirt + (255,))
             R(26, 38, 35, 55, dark(shirt, 0.82))
             R(14, 34, 25, 38, dark(shirt, 0.75))                  # gola/capuz
-            R(16, 39, 16, 46, (235, 235, 235)); R(23, 39, 23, 46, (235, 235, 235))   # cordões
-            if A.get('logo', True):
-                R(17, 48, 22, 51, light(shirt, 0.5))
+            if A.get('top') == 'zip':
+                R(14, 34, 25, 37, dark(shirt, 0.6)); R(19, 37, 20, 52, (120, 120, 130)); P(19, 52, (200, 200, 210))
+                R(27, 46, 32, 47, (220, 220, 225))
+            else:
+                R(16, 39, 16, 46, (235, 235, 235)); R(23, 39, 23, 46, (235, 235, 235))   # cordões
+                if A.get('logo', True):
+                    R(17, 48, 22, 51, light(shirt, 0.5))
             # pescoço
             R(16, 30, 23, 35, dark(skin, 0.85))
             # orelhas
@@ -85,10 +89,15 @@ def avatar_frames(A):
                 d.rounded_rectangle((8, 3, 31, 12), 5, fill=hair + (255,)); R(7, 8, 11, 34, hair); R(28, 8, 32, 34, hair)
             elif style == 'bald':
                 pass
-            if style != 'bald':
+            elif style == 'shaved':
+                st = mix(skin, hair, 0.35)
+                R(10, 9, 11, 16, st); R(28, 9, 29, 16, st)            # lateral bem curtinha
+                R(13, 7, 15, 8, light(skin, 0.55)); P(16, 7, light(skin, 0.35))   # brilho da careca
+            if style not in ('bald', 'shaved'):
                 for x in range(13, 27, 4): P(x, 5, light(hair, 0.18))   # brilho
             # sobrancelhas
-            R(13, 14, 16, 14, dark(hair, 0.9)); R(23, 14, 26, 14, dark(hair, 0.9))
+            bw = 2 if A.get('thick_brows') else 1
+            R(13, 15 - bw, 16, 14, dark(hair, 0.9)); R(23, 15 - bw, 26, 14, dark(hair, 0.9))
             # olhos
             if eyes == 'open':
                 R(14, 17, 15, 18, eye); R(24, 17, 25, 18, eye); P(14, 17, (255, 255, 255)); P(24, 17, (255, 255, 255))
@@ -97,19 +106,30 @@ def avatar_frames(A):
             # nariz
             P(19, 21, dark(skin, 0.75)); P(20, 22, dark(skin, 0.75))
             # barba
-            if beard:
+            if beard == 'full':
+                bc = dark(hair, 1.0); b2 = light(hair, 0.12)
+                R(10, 19, 10, 22, bc); R(29, 19, 29, 22, bc); R(10, 23, 12, 29, bc); R(27, 23, 29, 29, bc); R(11, 26, 28, 31, bc); R(13, 32, 26, 32, bc)
+                R(15, 23, 24, 24, bc); R(14, 24, 15, 26, bc); R(24, 24, 25, 26, bc)      # bigode ligado
+                for x in range(12, 28, 3): P(x, 30 + (x % 2), b2)
+            elif beard:
                 bc = dark(hair, 1.0)
                 R(11, 23, 12, 29, bc); R(27, 23, 28, 29, bc); R(12, 27, 27, 31, bc); R(15, 23, 24, 24, bc)
             # boca
             mc = (90, 30, 30)
             if mouth == 'closed':
-                R(17, 26, 22, 26, mc)
+                R(17, 25, 22, 26, (176, 104, 96)); R(17, 26, 22, 26, (140, 70, 66))
             elif mouth == 'mid':
                 R(17, 25, 22, 27, mc); R(18, 27, 21, 27, (200, 90, 90))
             else:
                 R(17, 25, 22, 28, mc); R(18, 25, 21, 25, (245, 245, 245)); R(18, 28, 21, 28, (200, 90, 90))
             # óculos
-            if glasses:
+            if glasses == 'aviator':
+                gc = (30, 30, 36); lc = (40, 44, 60); hl = (120, 130, 160)
+                d.polygon([(12, 16), (18, 16), (18, 19), (16, 21), (13, 21), (12, 19)], fill=lc + (255,), outline=gc + (255,))
+                d.polygon([(21, 16), (27, 16), (27, 19), (26, 21), (23, 21), (21, 19)], fill=lc + (255,), outline=gc + (255,))
+                R(18, 16, 21, 16, gc); R(10, 16, 11, 16, gc); R(28, 16, 29, 16, gc)
+                P(13, 17, hl); P(14, 17, hl); P(22, 17, hl); P(23, 17, hl)
+            elif glasses:
                 gc = (25, 25, 30)
                 d.rectangle((12, 16, 17, 20), outline=gc + (255,)); d.rectangle((22, 16, 27, 20), outline=gc + (255,)); R(18, 17, 21, 17, gc)
             # headset gamer

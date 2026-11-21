@@ -1,0 +1,28 @@
+{
+ "hairstyle": "shaved",
+ "beard": "full",
+ "glasses": "aviator",
+ "thick_brows": true,
+ "skin": [
+  196,
+  140,
+  104
+ ],
+ "hair": [
+  26,
+  20,
+  18
+ ],
+ "shirt": [
+  24,
+  24,
+  30
+ ],
+ "top": "zip",
+ "accent": [
+  255,
+  70,
+  160
+ ],
+ "headset": true
+}

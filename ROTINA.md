@@ -1,5 +1,11 @@
 # Rotina do canal (terças e quintas) do canal "A Peça que Faltava"
 
+## Dois formatos, alternando (pedido do dono em 20/11/2026)
+
+Olhe a última entrada de `historico.json`: se ela tem `"formato": "pixel"`, o episódio de hoje é **história real** (formato
+original, `engine/make.py`). Se não tem, o de hoje é **notícia de games** com o avatar do dono em pixel art (`engine/pixel.py`,
+seção "Formato games" no fim deste arquivo). Grave `"formato": "pixel"` ou `"formato": "historia"` em cada nova entrada.
+
 Canal de histórias reais animadas (ciência, engenharia, história, invenções, desastres que ensinaram algo,
 "o detalhe que mudou tudo"). Bonecos 2D com volume, câmera de cinema, vozes geradas, legendas.
 
@@ -135,3 +141,20 @@ O dono pediu o canal com menos "cara de IA". Valem para todo episódio novo:
 - Guardar no JSON `"youtube": {"pinned_comment": "..."}`: um comentário curto do canal, com opinião ou bastidor
   ("O que mais me pegou nessa história foi…") + uma pergunta. Se o Metricool tiver campo de primeiro comentário, usar;
   senão, incluir o texto no aviso ao dono para ele fixar.
+
+## Formato games (pixel) — a partir de 20/11/2026
+
+- Tema: a notícia de games mais comentada da semana (lançamento, recorde, anúncio grande, evento). Mesma checagem: 2 fontes por fato.
+- Apresentador: avatar do dono em pixel art (`marca/avatar.json`, feito a partir das fotos dele: careca, barba cheia,
+  óculos aviador, blusa preta com zíper, headset). Ele fala em 1ª pessoa, conversando com quem assiste ("Fala, galera!").
+  Opinião leve pode; nunca inventar experiência pessoal específica dele (ex.: "eu joguei 10 horas").
+- **Sem gameplay, trailer, logo, capa ou personagem dos jogos**: nem de streamers, nem oficiais (Content ID/strike).
+  Nomes de jogos, empresas e números podem aparecer em texto. Cenários são pixel art original do motor (`neon`, `room`, `stats`, `news`).
+- Roteiro: `stories/AAAA-MM-DD-slug.json` com `"format": "pixel"`, `"avatar"` (copiar de `marca/avatar.json`), `"voice"`,
+  `scenes` (bg + lines com `text`, `show`, `sfx`), `short`, `thumb_lines`. Exemplo: `stories/2026-11-21-gta6-lancamento.json`.
+  Alvo 2–3 min, 20–30 falas. `show`: title/sub, big/sub, pill, list, compare.
+- Gerar: `python3 engine/pixel.py stories/ARQ.json out/ARQ` (≈5 min). Conferir folhas e thumb como no outro formato.
+- YouTube: categoria GAMING, `isAiGeneratedContent: true`; descrição diz "apresentador em pixel art e voz gerada por computador"
+  e "não usamos imagens do jogo".
+- Voz: por enquanto a voz gerada (cadu-medium). O dono quer a própria voz no avatar: falta uma gravação de 1–2 min dele
+  com link público para clonar (o áudio de 10 s enviado em 20/11 não pôde virar link público nesta sessão).

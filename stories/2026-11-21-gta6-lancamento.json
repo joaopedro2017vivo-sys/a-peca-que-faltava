@@ -5,23 +5,26 @@
  "channel": "A Peça que Faltava",
  "format": "pixel",
  "avatar": {
-  "hairstyle": "short",
-  "beard": true,
+  "hairstyle": "shaved",
+  "beard": "full",
+  "glasses": "aviator",
+  "thick_brows": true,
   "skin": [
-   200,
+   196,
    140,
-   100
+   104
   ],
   "hair": [
-   30,
+   26,
    20,
-   15
+   18
   ],
   "shirt": [
-   40,
-   40,
-   48
+   24,
+   24,
+   30
   ],
+  "top": "zip",
   "accent": [
    255,
    70,

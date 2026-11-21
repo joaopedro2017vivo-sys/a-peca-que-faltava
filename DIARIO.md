@@ -36,3 +36,11 @@
 - make.py: QA OK na 1ª tentativa (196,1 s; short 92,5 s; −14,3/−14,5 LUFS). Folhas e thumb conferidas: nada cortado/sobreposto.
 - Branch videos: ep-20261119 (commit normal por cima).
 - Metricool: vídeo hoje 20:00 (uuid 4844718927233761459, thumb própria + primeiro comentário), Short amanhã 12:00 (uuid -2865097289912859678); mídia baixada (static.metricool.com) nos dois. Só YouTube conectado → sem Instagram/TikTok.
+
+## 2026-11-20 (pedido do dono, fora da rotina)
+- Dono pediu vídeo de GTA 6 (lançado 19/11) com avatar dele em pixel. Decidiu: sem cortes de gameplay (risco de direitos), só animação; alternar histórias e games.
+- Criado `engine/pixel.py` (apresentador pixel art, cenários neon/quarto/stats/news, trilha chiptune original, legenda karaokê). Avatar feito a partir de 4 fotos dele (`marca/avatar.json`).
+- Fatos (2+ fontes): US$ 3,79 bi no 1º dia (Take-Two/Forbes/ABC), 32,5 mi de cópias pré-lançamento, Metacritic 99 (empate com Ocarina of Time), Twitch ~3,3 mi simultâneos (recorde, LoL 3,1 mi), ~7,6–8 mi somando plataformas, recorde de tráfego DE-CIX, PSN caiu no lançamento, 30 fps nos consoles, sem PC, R$ 449,90/549,90, legendado sem dublagem. De fora: estimativa de US$ 2,36 bi (só digital, Sensor Tower), comparação com Homem-Aranha (fonte única), minutos jogados (Circana, fonte única).
+- QA OK (151,1 s; short 86,8 s; −15,4 LUFS). Branch videos: ep-20261121-gta6.
+- Metricool: vídeo 20/11 21:40 (uuid 4599102999830875879, thumb + 1º comentário), Short 20/11 21:55 (uuid 926716543223481331); mídia baixada nos dois.
+- Voz do dono: mandou áudio de 10 s; não deu pra transcrever/clonar (precisa de link público; compartilhar no Drive foi bloqueado). Vídeo saiu com a voz gerada.
