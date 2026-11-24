@@ -1,0 +1,593 @@
+{
+ "slug": "lucy-fossil",
+ "format": "historia",
+ "title": "O cotovelo que mudou a nossa história",
+ "thumb_text": "Um cotovelo de 3,2 milhões de anos",
+ "channel": "A Peça que Faltava",
+ "youtube": {
+  "title": "Eles quase foram embora… e aí viram um pedacinho de cotovelo no chão (a história da Lucy)",
+  "description": "Sabe quando você tá voltando cansado, louco pra ir embora, e resolve cortar caminho? Foi num momento desses que apareceu um dos fósseis mais famosos do mundo.\n\nEm 24 de novembro de 1974, em Hadar, na Etiópia, o paleoantropólogo Donald Johanson e o estudante Tom Gray voltavam para o carro depois de uma manhã quente de trabalho quando viram um pedaço de osso de cotovelo numa ravina. Em volta apareceram fêmur, mandíbula, pedaços do crânio, costelas, bacia. Em duas semanas a equipe juntou centenas de fragmentos: cerca de 40% de um único esqueleto, com uns 3,2 milhões de anos. Naquela noite, no acampamento, a música 'Lucy in the Sky with Diamonds', dos Beatles, tocou sem parar, e o fóssil virou Lucy. Ela media pouco mais de um metro, tinha um cérebro pequeno, parecido com o de um chimpanzé, e mesmo assim andava em pé. Isso mostrou que andar sobre duas pernas veio antes do cérebro grande. Hoje o fóssil original fica guardado no Museu Nacional da Etiópia, em Adis Abeba.\n\nDramatização animada baseada em fatos reais, com vozes geradas por computador. Os personagens são ilustrativos.\n\nFontes:\nhttps://iho.asu.edu/node/15\nhttps://news.asu.edu/20241121-science-and-technology-lucys-lasting-legacy-donald-johanson-reflects-discovery-lifetime\nhttps://www.britannica.com/topic/Lucy-fossil\nhttps://www.history.com/this-day-in-history/november-24/lucy-fossil-discovered\nhttps://www.livescience.com/archaeology/human-evolution/science-history-iconic-lucy-fossil-discovered-transforming-our-understanding-of-human-evolution-nov-24-1974\nhttps://theconversation.com/lucy-discovered-50-years-ago-in-ethiopia-stood-just-3-5-feet-tall-but-she-still-towers-over-our-understanding-of-human-origins-227866\n\nE você: teria olhado pro chão naquela hora, ou ia direto pro carro?\n\n#lucy #fossil #evolução #historia #curiosidades",
+  "tags": [
+   "lucy",
+   "fóssil",
+   "australopithecus afarensis",
+   "donald johanson",
+   "etiópia",
+   "hadar",
+   "evolução humana",
+   "paleontologia",
+   "ciência",
+   "história",
+   "curiosidades",
+   "animação"
+  ],
+  "short_title": "Eles quase foram embora. Aí viram um osso no chão. #shorts",
+  "short_description": "Em 1974, um pedacinho de cotovelo numa ravina da Etiópia virou a Lucy, um dos fósseis mais famosos do mundo. Dramatização animada baseada em fatos reais, com vozes geradas por computador.\n\n#shorts #lucy #fossil #evolução #curiosidades",
+  "pinned_comment": "O que mais me pegou nessa história: a Lucy apareceu na volta, quando todo mundo já tava cansado e querendo ir embora. Você já achou alguma coisa importante justamente quando tinha desistido de procurar?"
+ },
+ "fontes": [
+  "https://iho.asu.edu/node/15",
+  "https://news.asu.edu/20241121-science-and-technology-lucys-lasting-legacy-donald-johanson-reflects-discovery-lifetime",
+  "https://www.britannica.com/topic/Lucy-fossil",
+  "https://www.history.com/this-day-in-history/november-24/lucy-fossil-discovered",
+  "https://www.livescience.com/archaeology/human-evolution/science-history-iconic-lucy-fossil-discovered-transforming-our-understanding-of-human-evolution-nov-24-1974",
+  "https://theconversation.com/lucy-discovered-50-years-ago-in-ethiopia-stood-just-3-5-feet-tall-but-she-still-towers-over-our-understanding-of-human-origins-227866",
+  "https://en.wikipedia.org/wiki/November_24",
+  "https://en.wikipedia.org/wiki/Lucy_(Australopithecus)"
+ ],
+ "pronounce": [
+  [
+   "Lucy in the Sky with Diamonds",
+   "Lúci in dã scái uíd dáimonds"
+  ],
+  [
+   "Lucy",
+   "Lúci"
+  ],
+  [
+   "Johanson",
+   "Djôranssom"
+  ],
+  [
+   "Tom Gray",
+   "Tóm Grêi"
+  ],
+  [
+   "Land Rover",
+   "Lénd Rôver"
+  ],
+  [
+   "Beatles",
+   "Bítous"
+  ],
+  [
+   "Hadar",
+   "Radár"
+  ],
+  [
+   "Darwin",
+   "Dárvin"
+  ],
+  [
+   "Australopithecus afarensis",
+   "Australopítecus afarênsis"
+  ]
+ ],
+ "narrator": {
+  "voice": "cadu-medium",
+  "speed": 0.9
+ },
+ "cast": {
+  "P": {
+   "name": "Pesquisadora",
+   "kind": "person",
+   "outfit": "worker",
+   "color": [
+    230,
+    120,
+    40
+   ],
+   "skin": [
+    180,
+    128,
+    92
+   ],
+   "hair": [
+    40,
+    28,
+    22
+   ],
+   "hairstyle": "bun",
+   "lashes": true,
+   "shirt": [
+    200,
+    170,
+    120
+   ],
+   "long_sleeve": true,
+   "voice": "dii-high",
+   "speed": 0.93,
+   "pitch": 0
+  },
+  "E": {
+   "name": "Estudante",
+   "kind": "person",
+   "outfit": "shirt",
+   "color": [
+    70,
+    140,
+    220
+   ],
+   "skin": [
+    236,
+    192,
+    160
+   ],
+   "hair": [
+    110,
+    70,
+    40
+   ],
+   "hairstyle": "short",
+   "glasses": true,
+   "shirt": [
+    90,
+    130,
+    90
+   ],
+   "voice": "jeff-medium",
+   "speed": 0.96,
+   "pitch": 1
+  },
+  "G": {
+   "name": "Geólogo",
+   "kind": "person",
+   "outfit": "worker",
+   "color": [
+    60,
+    170,
+    110
+   ],
+   "skin": [
+    120,
+    80,
+    56
+   ],
+   "hair": [
+    20,
+    16,
+    14
+   ],
+   "hairstyle": "short",
+   "beard": true,
+   "shirt": [
+    150,
+    110,
+    80
+   ],
+   "voice": "faber-medium",
+   "speed": 0.95,
+   "pitch": -2
+  }
+ },
+ "scenes": [
+  {
+   "bg": "studio",
+   "mood": "tense",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Imagina passar meses procurando uma coisa… e achar justamente quando você já tava indo embora.",
+     "show": {
+      "icon": "question"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Foi assim que um pedacinho de cotovelo mudou o que a gente sabia sobre a nossa própria origem.",
+     "show": {
+      "pill": "Um pedacinho de osso"
+     },
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "bg": "studio",
+   "mood": "calm",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Etiópia, 1974. Num lugar chamado Hadar: terra seca, morro de areia, calor de rachar.",
+     "show": [
+      {
+       "year": "1974"
+      },
+      {
+       "icon": "globe"
+      }
+     ]
+    },
+    {
+     "spk": "N",
+     "text": "No ano anterior, a equipe tinha achado ali perto um joelho fóssil. Um joelho só. Mas era o suficiente pra eles voltarem.",
+     "show": {
+      "title": "Hadar, Etiópia",
+      "sub": "a equipe voltou em 1974"
+     }
+    }
+   ]
+  },
+  {
+   "bg": "desert",
+   "mood": "calm",
+   "cast": [
+    "P",
+    "E"
+   ],
+   "expr": "neutral",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Vinte e quatro de novembro. O paleoantropólogo Donald Johanson e o estudante Tom Gray passaram a manhã mapeando o terreno.",
+     "show": {
+      "year": "24/11/1974"
+     }
+    },
+    {
+     "spk": "E",
+     "text": "Tá quente demais. Vamo voltar pro carro?",
+     "g": "shrug",
+     "e": "worried"
+    },
+    {
+     "spk": "P",
+     "text": "Vamo. Mas vamo por aqui, pela ravina.",
+     "g": "pointR",
+     "e": "neutral",
+     "acts": {
+      "E": [
+       "idle",
+       "neutral"
+      ]
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Repara: eles já tinham terminado o trabalho do dia. Era só a volta. Os dois personagens aqui são ilustrativos, tá? Mas o caminho foi esse.",
+     "pause": 0.4
+    },
+    {
+     "spk": "P",
+     "text": "Peraí. Peraí.",
+     "g": "hold",
+     "e": "surprised",
+     "sfx": "rustle",
+     "sfx_at": 0.1,
+     "acts": {
+      "E": [
+       "idle",
+       "surprised"
+      ]
+     }
+    },
+    {
+     "spk": "E",
+     "text": "Que foi?",
+     "g": "open",
+     "e": "surprised"
+    },
+    {
+     "spk": "N",
+     "text": "No chão, um fragmento de osso. Um pedaço de cotovelo. E não era de macaco, nem de antílope.",
+     "show": {
+      "icon": "question"
+     }
+    },
+    {
+     "spk": "P",
+     "text": "Isso aqui… é de hominídeo.",
+     "g": "pointL",
+     "e": "determined"
+    }
+   ]
+  },
+  {
+   "bg": "desert",
+   "mood": "hope",
+   "cast": [
+    "P",
+    "E"
+   ],
+   "expr": "happy",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "E aí começou. Olhando em volta, apareceu um pedaço de fêmur, o osso da coxa.",
+     "show": {
+      "icon": "check"
+     }
+    },
+    {
+     "spk": "E",
+     "text": "Tem mais aqui! Isso é mandíbula!",
+     "g": "pointR",
+     "e": "surprised"
+    },
+    {
+     "spk": "N",
+     "text": "Depois, pedaços do crânio, costelas, a bacia. Tudo espalhado no mesmo pedaço de encosta.",
+     "show": {
+      "list": [
+       "cotovelo",
+       "fêmur",
+       "mandíbula",
+       "crânio",
+       "bacia"
+      ]
+     }
+    },
+    {
+     "spk": "P",
+     "text": "Não é um osso solto. É um esqueleto.",
+     "g": "cheer",
+     "e": "happy",
+     "sfx": "chime",
+     "sfx_at": 1.0,
+     "acts": {
+      "E": [
+       "cheer",
+       "happy"
+      ]
+     }
+    },
+    {
+     "spk": "N",
+     "text": "E isso é raríssimo: um monte de ossos de um indivíduo só, no mesmo lugar.",
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "bg": "desert",
+   "mood": "triumph",
+   "cast": [
+    "P",
+    "E",
+    "G"
+   ],
+   "expr": "happy",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Naquela noite, o acampamento virou festa. Teve dança, teve cantoria.",
+     "show": {
+      "icon": "heart"
+     }
+    },
+    {
+     "spk": "G",
+     "text": "Bota de novo aquela música!",
+     "g": "wave",
+     "e": "happy"
+    },
+    {
+     "spk": "N",
+     "text": "A música era 'Lucy in the Sky with Diamonds', dos Beatles. Tocou de novo. E de novo. E de novo.",
+     "show": {
+      "pill": "tocou sem parar"
+     }
+    },
+    {
+     "spk": "E",
+     "text": "Ué… e se ela se chamar Lucy?",
+     "g": "shrug",
+     "e": "happy",
+     "acts": {
+      "P": [
+       "idle",
+       "happy"
+      ],
+      "G": [
+       "idle",
+       "happy"
+      ]
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Pegou. E, sinceramente, é um nome muito melhor que o oficial: AL 288-1.",
+     "show": {
+      "pill": "nome oficial: AL 288-1"
+     },
+     "sfx": "boing",
+     "sfx_at": 3.5
+    }
+   ]
+  },
+  {
+   "bg": "lab",
+   "mood": "calm",
+   "cast": [
+    "P",
+    "G"
+   ],
+   "expr": "neutral",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Em duas semanas de escavação, saíram centenas de fragmentos. Montando tudo, deu quarenta e sete ossos de uma pessoa só.",
+     "show": {
+      "big": "47 ossos"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Uns quarenta por cento de um esqueleto. Na época, o ancestral humano mais completo que alguém já tinha achado.",
+     "show": {
+      "big": "40%",
+      "sub": "de um único esqueleto"
+     }
+    },
+    {
+     "spk": "G",
+     "text": "E quantos anos ela tem?",
+     "g": "open",
+     "e": "neutral"
+    },
+    {
+     "spk": "P",
+     "text": "Uns três milhões e duzentos mil.",
+     "g": "talk",
+     "e": "determined",
+     "acts": {
+      "G": [
+       "idle",
+       "surprised"
+      ]
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Olha só: três milhões e duzentos mil anos. Ela era da espécie Australopithecus afarensis.",
+     "show": {
+      "title": "3,2 milhões de anos",
+      "sub": "Australopithecus afarensis"
+     }
+    }
+   ]
+  },
+  {
+   "bg": "lab",
+   "mood": "tense",
+   "cast": [
+    "P",
+    "G"
+   ],
+   "expr": "neutral",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Agora vem a parte que mudou tudo. A Lucy era pequenininha: pouco mais de um metro, uns vinte e sete quilos.",
+     "show": {
+      "list": [
+       "~1,1 m",
+       "~27 kg"
+      ]
+     }
+    },
+    {
+     "spk": "N",
+     "text": "E o cérebro? Pequeno. Mais ou menos do tamanho do de um chimpanzé.",
+     "show": {
+      "icon": "bulb"
+     }
+    },
+    {
+     "spk": "P",
+     "text": "Só que olha o joelho. Olha a bacia. Olha a coluna.",
+     "g": "pointR",
+     "e": "determined"
+    },
+    {
+     "spk": "G",
+     "text": "Opa. Ela andava em pé.",
+     "g": "open",
+     "e": "surprised"
+    },
+    {
+     "spk": "N",
+     "text": "Andava sobre duas pernas. Mesmo com um cérebro de chimpanzé.",
+     "pause": 0.6
+    },
+    {
+     "spk": "N",
+     "text": "Muita gente achava que primeiro veio o cérebro grande, e só depois a gente levantou. A Lucy mostrou que foi o contrário.",
+     "show": {
+      "list": [
+       "1º: andar em pé",
+       "2º: cérebro grande"
+      ]
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Primeiro os pés. Depois a cabeça.",
+     "show": {
+      "pill": "primeiro os pés"
+     },
+     "pause": 0.5
+    }
+   ]
+  },
+  {
+   "bg": "studio",
+   "mood": "hope",
+   "lines": [
+    {
+     "spk": "N",
+     "text": "Hoje, a Lucy de verdade fica guardada no Museu Nacional da Etiópia, em Adis Abeba. Bem protegida, claro.",
+     "show": {
+      "title": "Museu Nacional da Etiópia",
+      "sub": "Adis Abeba"
+     }
+    },
+    {
+     "spk": "N",
+     "text": "E tem uma coincidência linda: no mesmo dia, vinte e quatro de novembro, só que em 1859, Charles Darwin publicou 'A Origem das Espécies'.",
+     "show": [
+      {
+       "year": "24/11/1859"
+      },
+      {
+       "icon": "book"
+      }
+     ]
+    },
+    {
+     "spk": "N",
+     "text": "Cento e quinze anos depois, na mesma data, aparece um pedacinho de cotovelo numa ravina.",
+     "show": {
+      "list": [
+       "1859: Darwin",
+       "1974: Lucy"
+      ]
+     }
+    },
+    {
+     "spk": "N",
+     "text": "Tudo porque, na volta pro carro, cansados e com calor, alguém resolveu olhar pro chão.",
+     "show": {
+      "pill": "olha pro chão"
+     },
+     "hold": 1.0
+    }
+   ]
+  }
+ ],
+ "short": [
+  0,
+  1,
+  4,
+  8,
+  9,
+  10,
+  11,
+  15,
+  17,
+  19,
+  20,
+  23,
+  24,
+  25,
+  27,
+  28,
+  30,
+  31,
+  32,
+  33,
+  37
+ ],
+ "thumb_line": 15,
+ "thumb_t": 0.9
+}

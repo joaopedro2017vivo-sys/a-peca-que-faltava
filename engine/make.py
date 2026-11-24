@@ -343,8 +343,8 @@ def thumbnail(S, story_path, vdir, path):
     from gfx import font, FBL
     # quadro de um close de personagem (ou o primeiro quadro com título)
     cand = [ln for ln in S.lines if ln.spk in S.d['cast']] or S.lines
-    ln = cand[0]
-    arr = video.render_frame(S, ln.f0 + int(min(ln.dur, 1.2) * FPS), 'h', 1.0)
+    ln = S.lines[S.d['thumb_line']] if 'thumb_line' in S.d else cand[0]
+    arr = video.render_frame(S, ln.f0 + int(min(ln.dur, S.d.get('thumb_t', 1.2)) * FPS), 'h', 1.0)
     im = Image.fromarray(arr).crop((0, video.BAR, 1920, 1080 - video.BAR)).resize((1280, 544))
     th = Image.new('RGB', (1280, 720), (8, 10, 20)); th.paste(im, (0, 88))
     th = th.convert('RGBA')
