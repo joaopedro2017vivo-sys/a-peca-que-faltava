@@ -1,10 +1,16 @@
 # Rotina do canal (terças e quintas) do canal "A Peça que Faltava"
 
-## Dois formatos, alternando (pedido do dono em 20/11/2026)
+## FORMATO PADRÃO: AVATAR PIXEL + NOTÍCIA EM ALTA (decisão do dono, 24/11/2026 — vale para TODOS os episódios)
 
-Olhe a última entrada de `historico.json`: se ela tem `"formato": "pixel"`, o episódio de hoje é **história real** (formato
-original, `engine/make.py`). Se não tem, o de hoje é **notícia de games** com o avatar do dono em pixel art (`engine/pixel.py`,
-seção "Formato games" no fim deste arquivo). Grave `"formato": "pixel"` ou `"formato": "historia"` em cada nova entrada.
+- Todo vídeo é apresentado pelo **avatar em pixel art do João Pedro** (`marca/avatar.json`: careca, barba cheia, óculos,
+  headset), falando em 1ª pessoa com a voz clonada dele. Motor: `engine/pixel.py` (ver seção "Formato games (pixel)" no fim).
+- Tema: **notícia em alta nos últimos dias** (games, lançamentos, tecnologia, cultura pop em tendência: Google Trends,
+  YouTube em alta, sites de games). Checagem de 2 fontes por fato continua.
+- **NÃO usar mais** o formato antigo de bonecos 2D/histórias ("neste dia na história", `engine/make.py`). A alternância de
+  20/11 foi cancelada. Se o avatar pixel não estiver no repositório, não publicar no estilo antigo: parar e avisar o dono.
+- Grave `"formato": "pixel"` em cada nova entrada de `historico.json`.
+- As seções abaixo sobre bonecos/cenários/humanizado valem só como referência do motor antigo; o tom humanizado
+  (conversa, frases curtas, sem clichês de IA) vale também para o apresentador pixel.
 
 Canal de histórias reais animadas (ciência, engenharia, história, invenções, desastres que ensinaram algo,
 "o detalhe que mudou tudo"). Bonecos 2D com volume, câmera de cinema, vozes geradas, legendas.
@@ -38,7 +44,7 @@ O motor ainda aceita `"narrator_audio"` caso ele mande uma gravação algum dia 
      de uma pessoa real com nome; usar personagens genéricos (engenheira, repórter, operário, cientista) ou citar o fato pelo narrador.
    - Narrador: frases de até ~25 palavras.
    - **Jeito humano de contar (obrigatório, ver seção "Humanizado" abaixo).**
-6. **Gerar**: `python3 engine/make.py stories/ARQUIVO.json out/ARQUIVO` (≈30–40 min).
+6. **Gerar**: formato pixel (`engine/voz_externa.py` + `engine/pixel.py`, ver fim do arquivo). O `make.py` é do formato antigo, não usar.
    Se o QA falhar, corrigir e rodar de novo (no máximo 2 tentativas).
 7. **Olhar o resultado**: abrir `folha_16x9.jpg`, `folha_9x16.jpg` e `thumb.jpg` e conferir se nada está cortado, sobreposto ou vazio.
 8. **Publicar os arquivos** (branch `videos`, sobrescrita a cada episódio para o repositório não crescer):
@@ -51,10 +57,11 @@ O motor ainda aceita `"narrator_audio"` caso ele mande uma gravação algum dia 
    Link público: `https://raw.githubusercontent.com/joaopedro2017vivo-sys/a-peca-que-faltava/videos/ep-AAAAMMDD/video_16x9.mp4`
    (o sandbox não consegue abrir esse link; quem baixa é o Metricool. Criar Releases não é permitido nesta sessão.)
 9. **Agendar no Metricool** (blogId 7995588):
-   - YouTube vídeo: hoje às 20:00 (America/Sao_Paulo), `type: video`, público, categoria EDUCATION, madeForKids false,
+   - YouTube vídeo: hoje às 20:00 (America/Sao_Paulo), `type: video`, público, categoria GAMING (ou SCIENCE_TECHNOLOGY/ENTERTAINMENT conforme a notícia), madeForKids false,
      isAiGeneratedContent true, título/descrição/tags do JSON.
    - YouTube Short: amanhã às 12:00, `type: short`.
-   - Instagram Reel com o short (se o Instagram estiver conectado na brand): amanhã às 12:30, `isAiGenerated: true`.
+   - Instagram Reel com o short (se o Instagram estiver conectado na brand): amanhã às 12:30, `isAiGenerated: true`, legenda curta com 3 a 5 hashtags.
+   - TikTok (se conectado): o short amanhã às 13:00, título curto, `isAigc: true`.
    - Se o horário de hoje já passou, usar o próximo horário livre (+15 min).
    - **Conferir**: na resposta do Metricool o campo `media` deve virar `https://static.metricool.com/...`
      (sinal de que ele baixou o vídeo). Se não virar, o link falhou: avisar o dono.

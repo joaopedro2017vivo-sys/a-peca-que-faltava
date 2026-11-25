@@ -1,0 +1,259 @@
+{
+ "slug": "steam-awards-decada",
+ "title": "Melhor jogo da década",
+ "thumb_text": "Melhor jogo da década?",
+ "channel": "A Peça que Faltava",
+ "format": "pixel",
+ "avatar": {
+  "hairstyle": "shaved",
+  "beard": "full",
+  "glasses": "aviator",
+  "thick_brows": true,
+  "skin": [
+   196,
+   140,
+   104
+  ],
+  "hair": [
+   26,
+   20,
+   18
+  ],
+  "shirt": [
+   24,
+   24,
+   30
+  ],
+  "top": "zip",
+  "accent": [
+   255,
+   70,
+   160
+  ],
+  "headset": true
+ },
+ "voice": {
+  "provider": "speko-cartesia",
+  "voice_clone_id": "vc_7f48589f1c174050",
+  "provider_voice_id": "7d0a1565-4f11-4be6-8f32-3ac8a6c80c28"
+ },
+ "youtube": {
+  "title": "A Steam quer saber qual é o melhor jogo dos últimos 10 anos (e a lista é pesada)",
+  "description": "Dez anos de Steam Awards, dez jogos do ano… e agora só pode sobrar um.\n\nNa 10ª edição do Steam Awards, a Valve criou a categoria Hall of Fame: os dez jogos que já levaram o prêmio principal disputam o título de melhor jogo dos últimos 10 anos. Na lista: GTA V, The Witcher 3, PUBG, Sekiro, Red Dead Redemption 2, Resident Evil Village, Elden Ring, Baldur's Gate 3, Black Myth: Wukong e Hollow Knight: Silksong. Em 2016 e 2017 não havia categoria de jogo do ano, então a Valve usou os prêmios “Whoooaaaaaaaa, Dude” (GTA V) e “Choices Matter” (The Witcher 3). As indicações vão de 23 a 30 de novembro de 2026, e a votação final começa em 17 de dezembro, junto com a liquidação de inverno da Steam. São 14 categorias, com a volta de Just Five More Minutes, Defies Description e This Is My Job Now.\n\nVídeo de notícia com apresentador em pixel art; a voz é a do João Pedro, recriada por IA. Não usamos imagens dos jogos; os cenários são ilustrações originais.\n\nFontes:\nhttps://www.pcgamer.com/games/2026-steam-awards-pit-the-goty-winners-of-the-past-10-years-against-each-other-in-an-all-out-battle-for-supremacy/\nhttps://www.gamesradar.com/games/baldurs-gate-3-silksong-elden-ring-and-more-greats-compete-in-the-2026-steam-awards-for-1-game-of-the-past-10-years/\nhttps://www.kitguru.net/gaming/matthew-wilson/steam-awards-2026-adds-hall-of-fame-category-for-former-goty-winners/\nhttps://accountshark.net/blog/steam-awards-2026-nominations-hall-of-fame-award-categories-deadline-voting-dates\n\nE você: qual desses dez merece o título?\n\n#steam #steamawards #games #eldenring #baldursgate3",
+  "tags": [
+   "steam awards",
+   "steam awards 2026",
+   "melhor jogo da década",
+   "hall of fame",
+   "valve",
+   "steam",
+   "elden ring",
+   "baldur's gate 3",
+   "gta 5",
+   "the witcher 3",
+   "red dead redemption 2",
+   "silksong",
+   "notícias de games",
+   "games"
+  ],
+  "short_title": "A Steam vai escolher o melhor jogo da década #shorts",
+  "short_description": "Steam Awards 2026: os 10 jogos do ano da história do prêmio brigam pelo título de melhor dos últimos 10 anos. Apresentador em pixel art com a voz do João Pedro recriada por IA.\n\n#shorts #steam #steamawards #games",
+  "pinned_comment": "Minha aposta é Elden Ring contra Baldur's Gate 3 na final, mas o GTA 5 sempre dá um jeito de aparecer. Qual é o seu top 3 dessa lista?"
+ },
+ "fontes": [
+  "https://www.pcgamer.com/games/2026-steam-awards-pit-the-goty-winners-of-the-past-10-years-against-each-other-in-an-all-out-battle-for-supremacy/",
+  "https://www.gamesradar.com/games/baldurs-gate-3-silksong-elden-ring-and-more-greats-compete-in-the-2026-steam-awards-for-1-game-of-the-past-10-years/",
+  "https://www.kitguru.net/gaming/matthew-wilson/steam-awards-2026-adds-hall-of-fame-category-for-former-goty-winners/",
+  "https://accountshark.net/blog/steam-awards-2026-nominations-hall-of-fame-award-categories-deadline-voting-dates"
+ ],
+ "pronounce": [],
+ "scenes": [
+  {
+   "bg": "neon",
+   "lines": [
+    {
+     "text": "Fala, galera! A Steam abriu uma votação pra escolher o melhor jogo dos últimos dez anos. E quem escolhe é a gente.",
+     "show": {
+      "title": "MELHOR JOGO DA DÉCADA",
+      "sub": "Steam Awards 2026"
+     },
+     "sfx": "chime",
+     "sfx_at": 3.0
+    },
+    {
+     "text": "É o Steam Awards, aquele prêmio em que quem vota é a comunidade. E esse ano é especial: é a décima edição.",
+     "show": {
+      "pill": "10ª edição"
+     }
+    }
+   ]
+  },
+  {
+   "bg": "stats",
+   "lines": [
+    {
+     "text": "Por isso a Valve criou uma categoria nova, chamada Hall of Fame.",
+     "show": {
+      "big": "Hall of Fame",
+      "sub": "categoria nova"
+     },
+     "sfx": "pop",
+     "sfx_at": 0.3
+    },
+    {
+     "text": "A ideia é simples: pegar os dez jogos que já ganharam o prêmio principal… e colocar todo mundo pra brigar entre si.",
+     "show": {
+      "pill": "10 campeões, 1 vencedor"
+     }
+    },
+    {
+     "text": "Olha a lista. Começa com GTA 5, The Witcher 3, PUBG, Sekiro e Red Dead Redemption 2.",
+     "show": {
+      "list": [
+       "2016 · GTA V",
+       "2017 · The Witcher 3",
+       "2018 · PUBG",
+       "2019 · Sekiro",
+       "2020 · Red Dead 2"
+      ]
+     }
+    },
+    {
+     "text": "Depois vêm Resident Evil Village, Elden Ring, Baldur's Gate 3, Black Myth: Wukong… e, do ano passado, Hollow Knight: Silksong.",
+     "show": {
+      "list": [
+       "2021 · RE Village",
+       "2022 · Elden Ring",
+       "2023 · Baldur's Gate 3",
+       "2024 · Wukong",
+       "2025 · Silksong"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "bg": "news",
+   "lines": [
+    {
+     "text": "Peraí, que tem um detalhe curioso. Em 2016 e 2017 nem existia a categoria de jogo do ano.",
+     "show": {
+      "pill": "2016 e 2017: sem jogo do ano"
+     },
+     "sfx": "buzz",
+     "sfx_at": 1.0
+    },
+    {
+     "text": "Então a Valve usou outros prêmios no lugar. O GTA 5 entrou pelo prêmio “Whoa, Dude”… sim, o nome é esse mesmo.",
+     "show": {
+      "pill": "Whoooaaaaaaaa, Dude"
+     },
+     "sfx": "boing",
+     "sfx_at": 4.5
+    },
+    {
+     "text": "E o Witcher 3 entrou pelo “Choices Matter”, o prêmio das escolhas que importam.",
+     "show": {
+      "pill": "Choices Matter"
+     }
+    }
+   ]
+  },
+  {
+   "bg": "room",
+   "lines": [
+    {
+     "text": "Agora, como funciona. As indicações abriram nesta segunda, dia vinte e três, e vão até o dia trinta de novembro.",
+     "show": {
+      "big": "23 a 30/11",
+      "sub": "indicações abertas"
+     },
+     "sfx": "pop",
+     "sfx_at": 0.3
+    },
+    {
+     "text": "Nas outras categorias você indica o jogo que quiser. Na Hall of Fame, não: é só entre esses dez.",
+     "show": {
+      "pill": "Hall of Fame: só os 10"
+     }
+    },
+    {
+     "text": "A votação final começa em dezessete de dezembro, junto com a liquidação de inverno da Steam.",
+     "show": {
+      "big": "17/12",
+      "sub": "começa a votação final"
+     },
+     "sfx": "pop",
+     "sfx_at": 0.3
+    },
+    {
+     "text": "No total são catorze categorias. E três antigas voltaram: Just Five More Minutes, Defies Description e This Is My Job Now.",
+     "show": {
+      "list": [
+       "14 categorias",
+       "Just Five More Minutes",
+       "Defies Description",
+       "This Is My Job Now"
+      ]
+     }
+    },
+    {
+     "text": "Traduzindo: só mais cinco minutinhos, impossível de explicar… e isso agora é meu emprego. Quem nunca, né?",
+     "sfx": "boing",
+     "sfx_at": 4.0
+    }
+   ]
+  },
+  {
+   "bg": "neon",
+   "lines": [
+    {
+     "text": "Agora, minha opinião. Sinceramente? Acho que a briga boa vai ser entre Elden Ring e Baldur's Gate 3.",
+     "show": {
+      "compare": [
+       "Elden Ring",
+       "Baldur's Gate 3"
+      ]
+     }
+    },
+    {
+     "text": "Mas não dá pra descartar o GTA 5. É o mais velho da lista e continua aí, firme.",
+     "show": {
+      "pill": "GTA V: o veterano"
+     }
+    },
+    {
+     "text": "E o Silksong é o mais novo. Tem a torcida ainda quentinha.",
+     "show": {
+      "pill": "Silksong: o caçula"
+     }
+    },
+    {
+     "text": "E você? Qual desses dez merece ser o melhor jogo da década? Me conta aqui nos comentários. Valeu, e até a próxima!",
+     "show": {
+      "title": "E você?",
+      "sub": "qual é o melhor da década?"
+     },
+     "hold": 1.0
+    }
+   ]
+  }
+ ],
+ "short": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  9,
+  10,
+  11,
+  17
+ ],
+ "thumb_lines": [
+  "Melhor jogo",
+  "da década?",
+  "Steam Awards"
+ ]
+}

@@ -53,3 +53,11 @@
 - make.py: 1ª geração QA OK (186,2 s), mas a thumb pegou o personagem piscando e cortou o texto, e os `compare` mostravam "≠" onde não cabia (AL 288-1 ≠ Lucy). Adicionei `thumb_line`/`thumb_t` opcionais no make.py, encurtei o thumb_text e troquei os compare por pill/list. 2ª geração: QA OK (186,5 s; short 91,7 s; −14,3/−14,5 LUFS). Folhas e thumb conferidas.
 - Branch videos: ep-20261124 (commit normal por cima).
 - Metricool: YouTube vídeo hoje 20:00 (uuid -7889984984128732721, thumb + 1º comentário), Short amanhã 12:00 (uuid -8699809073554306935), TikTok amanhã 13:00 (uuid -5712525270450486196, isAigc). Mídia baixada (static.metricool.com) nos três. Novidade: TikTok (joaopetb) agora conectado na brand; Instagram continua não conectado → sem Reel.
+
+## 2026-11-24 (2ª execução, 22:52) — formato novo obrigatório
+- Dono decidiu hoje: todo episódio passa a ser com o avatar pixel dele + notícia em alta. A Lucy (estilo antigo) já tinha saído no YouTube às 20:00 (https://www.youtube.com/watch?v=gt2CpvZgycI); o Short e o TikTok da Lucy de amanhã ainda estavam pendentes no estilo antigo.
+- ROTINA.md atualizada: pixel é o padrão único; alternância com histórias cancelada.
+- Tema: Steam Awards 2026 (10ª edição) com a categoria Hall of Fame (10 GOTYs anteriores: GTA V, Witcher 3, PUBG, Sekiro, RDR2, RE Village, Elden Ring, BG3, Wukong, Silksong). Indicações 23–30/11, votação a partir de 17/12 com a Winter Sale, 14 categorias, 3 categorias que voltaram, substitutos de 2016/2017 (Whoooaaaaaaaa, Dude / Choices Matter). Checado em PC Gamer, GamesRadar, KitGuru e AccountShark. De fora (fonte única ou conflito): data/hora do resultado, fim da votação, regra de elegibilidade (2026 × pós-Autumn Sale 2025), conta não limitada, 5 finalistas.
+- Voz: clonada do dono (Speko/Cartesia), 18 falas, 115 s. pixel.py: QA OK na 1ª (123,1 s; short 70,4 s; −14,7/−14,9 LUFS). Folhas e thumb conferidas: avatar pixel aparece em tudo, nada cortado.
+- Branch videos: ep-20261124-steam.
+- Metricool: YouTube vídeo hoje 23:30 (20:00 já tinha passado; uuid -4390513357714862417, thumb + 1º comentário). Short da Lucy (uuid -8699809073554306935, amanhã 12:00) e TikTok da Lucy (uuid -5712525270450486196, amanhã 13:00) trocados para o short do Steam Awards (mesmos uuids). Mídia baixada (static.metricool.com) nos três. Instagram não conectado → sem Reel.
