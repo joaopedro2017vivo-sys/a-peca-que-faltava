@@ -1,0 +1,292 @@
+{
+ "slug": "motson-ia-fc27",
+ "title": "A voz que voltou",
+ "thumb_text": "A voz que voltou",
+ "channel": "A Peça que Faltava",
+ "format": "pixel",
+ "avatar": {
+  "hairstyle": "shaved",
+  "beard": "full",
+  "glasses": "aviator",
+  "thick_brows": true,
+  "skin": [
+   196,
+   140,
+   104
+  ],
+  "hair": [
+   26,
+   20,
+   18
+  ],
+  "shirt": [
+   24,
+   24,
+   30
+  ],
+  "top": "zip",
+  "accent": [
+   255,
+   70,
+   160
+  ],
+  "headset": true
+ },
+ "voice": {
+  "provider": "speko-cartesia",
+  "voice_clone_id": "vc_7f48589f1c174050",
+  "provider_voice_id": "7d0a1565-4f11-4be6-8f32-3ac8a6c80c28"
+ },
+ "youtube": {
+  "title": "Um narrador que morreu em 2023 voltou a narrar… no EA FC 27 (com IA)",
+  "description": "Imagina ligar o videogame e ouvir de novo a voz que narrava o seu jogo de futebol lá nos anos 90… só que essa pessoa já morreu.\n\nNa atualização de 26 de novembro de 2026, o EA Sports FC 27 traz de volta John Motson, o \"Motty\", narrador lendário da BBC e a primeira voz de narração da série FIFA (do FIFA 96 ao FIFA 2005). Ele morreu em 2023. A EA misturou gravações antigas dele com falas novas geradas por inteligência artificial, porque ele nunca gravou os nomes dos jogadores atuais. A família autorizou: o filho, Fred Motson, chamou de uma homenagem tocante. Já o grupo Save Our Voices Now criticou, dizendo que o próprio Motson não pôde consentir e que ser da família não deveria dar esse direito automaticamente.\n\nVídeo de notícia com apresentador em pixel art; a voz é a do João Pedro, recriada por IA (com autorização dele, claro). Não usamos imagens nem áudio do jogo; os cenários são ilustrações originais.\n\nFontes:\nhttps://www.pcgamer.com/software/ai/deceased-bbc-football-commentator-resurrected-with-ai-for-ea-sports-fc-the-family-says-its-a-touching-tribute-but-some-fans-call-it-gross-and-bleak/\nhttps://www.dexerto.com/ea-sports-fc/ea-fc-27-adds-ai-generated-commentary-from-iconic-commentator-3431237/\nhttps://www.gosugamers.net/entertainment/news/79529-ea-sports-fc-27-is-using-ai-to-digitally-resurrect-commentator-john-motson-in-game\n\nE você: ligaria essa narração ou acha que passou do ponto?\n\n#eafc27 #fifa #ia #games #futebol",
+  "tags": [
+   "ea fc 27",
+   "ea sports fc 27",
+   "john motson",
+   "narração",
+   "inteligência artificial",
+   "voz por ia",
+   "fifa",
+   "fifa 96",
+   "notícias de games",
+   "games",
+   "futebol"
+  ],
+  "short_title": "Narrador que morreu voltou no EA FC 27 com IA #shorts",
+  "short_description": "O EA Sports FC 27 trouxe de volta a voz do narrador John Motson, que morreu em 2023, usando IA e com autorização da família. Homenagem ou passou do ponto? Apresentador em pixel art com a voz do João Pedro recriada por IA.\n\n#shorts #eafc27 #fifa #ia",
+  "pinned_comment": "O que mais me pegou: ele nunca gravou o nome dos jogadores de hoje, então tudo isso que ele \"fala\" de novo é a IA. Você ligaria essa narração? E qual narrador brasileiro você queria ouvir de volta num jogo?"
+ },
+ "fontes": [
+  "https://www.pcgamer.com/software/ai/deceased-bbc-football-commentator-resurrected-with-ai-for-ea-sports-fc-the-family-says-its-a-touching-tribute-but-some-fans-call-it-gross-and-bleak/",
+  "https://www.dexerto.com/ea-sports-fc/ea-fc-27-adds-ai-generated-commentary-from-iconic-commentator-3431237/",
+  "https://www.gosugamers.net/entertainment/news/79529-ea-sports-fc-27-is-using-ai-to-digitally-resurrect-commentator-john-motson-in-game"
+ ],
+ "pronounce": [
+  [
+   "Motson",
+   "Mótson"
+  ],
+  [
+   "Motty",
+   "Móti"
+  ],
+  [
+   "Fred",
+   "Fréd"
+  ],
+  [
+   "Mat Prior",
+   "Mét Práior"
+  ],
+  [
+   "Save Our Voices Now",
+   "Sêiv Áuar Vóices Náu"
+  ]
+ ],
+ "scenes": [
+  {
+   "bg": "neon",
+   "lines": [
+    {
+     "text": "Fala, galera! Um narrador que morreu em 2023 voltou a narrar futebol. Hoje. Num videogame.",
+     "show": {
+      "title": "A VOZ QUE VOLTOU",
+      "sub": "EA Sports FC 27"
+     },
+     "sfx": "chime",
+     "sfx_at": 2.5
+    },
+    {
+     "text": "E quem trouxe ele de volta foi a inteligência artificial.",
+     "show": {
+      "pill": "voz recriada por IA"
+     }
+    }
+   ]
+  },
+  {
+   "bg": "news",
+   "lines": [
+    {
+     "text": "O nome dele é John Motson. Na Inglaterra, todo mundo chamava de Motty.",
+     "show": {
+      "big": "John Motson",
+      "sub": "o \"Motty\""
+     },
+     "sfx": "pop",
+     "sfx_at": 0.3
+    },
+    {
+     "text": "Ele foi um narrador lendário da BBC, daqueles que viram parte da memória do futebol inglês.",
+     "show": {
+      "pill": "lenda da BBC"
+     }
+    },
+    {
+     "text": "E tem um detalhe que pouca gente lembra: ele foi a primeira voz de narrador da série FIFA.",
+     "show": {
+      "pill": "a 1ª voz do FIFA"
+     }
+    },
+    {
+     "text": "Começou no FIFA 96 e foi até o FIFA 2005. Uma geração inteira cresceu ouvindo ele no console.",
+     "show": {
+      "list": [
+       "FIFA 96",
+       "…",
+       "FIFA 2005"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "bg": "stats",
+   "lines": [
+    {
+     "text": "Agora a novidade. Na atualização desta quinta, dia vinte e seis, o Motty volta no EA Sports FC 27.",
+     "show": {
+      "big": "26/11",
+      "sub": "atualização do FC 27"
+     },
+     "sfx": "pop",
+     "sfx_at": 0.3
+    },
+    {
+     "text": "Só que tem um problema: ele nunca gravou o nome dos jogadores de hoje.",
+     "show": {
+      "pill": "sem nomes novos gravados"
+     },
+     "sfx": "buzz",
+     "sfx_at": 1.0
+    },
+    {
+     "text": "Então a EA misturou as gravações antigas dele com falas novas, geradas por IA treinada na voz dele.",
+     "show": {
+      "compare": [
+       "gravações antigas",
+       "falas por IA"
+      ]
+     }
+    },
+    {
+     "text": "Ou seja: parte do que você vai ouvir, ele nunca disse de verdade.",
+     "show": {
+      "pill": "parte é IA"
+     }
+    }
+   ]
+  },
+  {
+   "bg": "room",
+   "lines": [
+    {
+     "text": "E a família? A família deu a bênção.",
+     "show": {
+      "pill": "família autorizou"
+     },
+     "sfx": "chime",
+     "sfx_at": 1.0
+    },
+    {
+     "text": "O filho dele, Fred, disse que o pai adorava ser a voz do jogo, e chamou isso de uma homenagem tocante.",
+     "show": {
+      "pill": "\"homenagem tocante\""
+     }
+    },
+    {
+     "text": "E um diretor de design da EA, Mat Prior, disse que nem teria seguido em frente se a família não estivesse totalmente de acordo.",
+     "show": {
+      "pill": "só com a família de acordo"
+     }
+    }
+   ]
+  },
+  {
+   "bg": "news",
+   "lines": [
+    {
+     "text": "Mas… nem todo mundo gostou.",
+     "show": {
+      "title": "A POLÊMICA",
+      "sub": "nem todo mundo curtiu"
+     },
+     "sfx": "buzz",
+     "sfx_at": 0.5
+    },
+    {
+     "text": "Um grupo que defende dubladores, o Save Our Voices Now, reclamou.",
+     "show": {
+      "pill": "Save Our Voices Now"
+     }
+    },
+    {
+     "text": "A crítica deles é: o próprio Motson nunca pôde dizer sim ou não. E ser da família não deveria dar esse direito automaticamente.",
+     "show": {
+      "compare": [
+       "família autorizou",
+       "ele não pôde opinar"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "bg": "neon",
+   "lines": [
+    {
+     "text": "Ah, e uma confissão. Essa voz que você tá ouvindo agora também é recriada por IA.",
+     "show": {
+      "pill": "essa voz também é IA"
+     },
+     "sfx": "boing",
+     "sfx_at": 2.0
+    },
+    {
+     "text": "A diferença é que ela é minha… e quem autorizou fui eu mesmo, né?",
+     "show": {
+      "pill": "autorizado por mim"
+     }
+    },
+    {
+     "text": "Sinceramente? Acho a homenagem bonita. Mas entendo quem acha estranho ouvir alguém que já se foi narrando gol novo.",
+     "show": {
+      "compare": [
+       "homenagem",
+       "estranho"
+      ]
+     }
+    },
+    {
+     "text": "E você? Ia ligar essa narração? E se fizessem isso com um narrador brasileiro que já se foi? Me conta aqui nos comentários. Valeu, e até a próxima!",
+     "show": {
+      "title": "E você?",
+      "sub": "ligaria essa narração?"
+     },
+     "hold": 1.0
+    }
+   ]
+  }
+ ],
+ "short": [
+  0,
+  1,
+  2,
+  4,
+  6,
+  7,
+  8,
+  9,
+  10,
+  13,
+  15,
+  16,
+  19
+ ],
+ "thumb_lines": [
+  "Narrador volta",
+  "com voz de IA",
+  "EA FC 27"
+ ]
+}
